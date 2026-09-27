@@ -1,0 +1,14 @@
+              precision    recall  f1-score   support
+
+        Mild     0.8229    0.8587    0.8404        92
+    Moderate     0.7228    0.7935    0.7565        92
+      Severe     0.9390    0.8105    0.8701        95
+
+    accuracy                         0.8208       279
+   macro avg     0.8282    0.8209    0.8223       279
+weighted avg     0.8294    0.8208    0.8228       279
+
+Overall accuracy: 0.820789
+Macro precision: 0.828238
+Macro recall: 0.820900
+Macro F1: 0.822320

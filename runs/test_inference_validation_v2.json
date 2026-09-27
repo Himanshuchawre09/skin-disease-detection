@@ -1,0 +1,81 @@
+{
+  "manifest": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\dataset_manifest_v2.csv",
+  "total_test_images": 757,
+  "completed_predictions": 757,
+  "errors_count": 0,
+  "errors": [],
+  "disease_accuracy": 0.9907529722589168,
+  "disease_correct": 750,
+  "disease_counts": {
+    "Acne": {
+      "total": 279,
+      "correct": 277,
+      "accuracy": 0.992831541218638
+    },
+    "Eczema": {
+      "total": 287,
+      "correct": 283,
+      "accuracy": 0.9860627177700348
+    },
+    "Normal": {
+      "total": 97,
+      "correct": 96,
+      "accuracy": 0.9896907216494846
+    },
+    "Other": {
+      "total": 94,
+      "correct": 94,
+      "accuracy": 1.0
+    }
+  },
+  "severity_counts": {
+    "Acne": {
+      "all_true_disease_images": 279,
+      "direct_stage2_correct": 247,
+      "direct_stage2_accuracy": 0.8853046594982079,
+      "end_to_end_correct": 246,
+      "end_to_end_accuracy": 0.8817204301075269,
+      "correctly_routed_to_severity_model": 277,
+      "conditional_severity_correct": 246,
+      "conditional_severity_accuracy": 0.8880866425992779
+    },
+    "Eczema": {
+      "all_true_disease_images": 287,
+      "direct_stage2_correct": 200,
+      "direct_stage2_accuracy": 0.6968641114982579,
+      "end_to_end_correct": 196,
+      "end_to_end_accuracy": 0.6829268292682927,
+      "correctly_routed_to_severity_model": 283,
+      "conditional_severity_correct": 196,
+      "conditional_severity_accuracy": 0.6925795053003534
+    }
+  },
+  "non_severity_classes": {
+    "Normal": {
+      "predicted_count": 98,
+      "violations": 0
+    },
+    "Other": {
+      "predicted_count": 94,
+      "violations": 0
+    }
+  },
+  "non_severity_violations": [],
+  "ground_truth_non_severity_misroutes": [
+    {
+      "filename": "Normal_perioral-dermatitis-9_0_4296.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_perioral-dermatitis-9_0_4296.jpeg",
+      "category": "Normal",
+      "true_disease": "Normal",
+      "true_severity": "nan",
+      "predicted_disease": "Acne",
+      "predicted_severity": "Mild",
+      "disease_correct": false,
+      "severity_model_calls": {
+        "Acne": 1,
+        "Eczema": 0
+      },
+      "severity_correct": false
+    }
+  ]
+}

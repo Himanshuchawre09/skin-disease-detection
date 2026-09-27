@@ -1,0 +1,10 @@
+{
+  "disease": "Acne",
+  "arch": "resnet50",
+  "test_accuracy": 0.8207885304659498,
+  "test_macro_precision": 0.8282377780460973,
+  "test_macro_recall": 0.8209000762776507,
+  "test_macro_f1": 0.8223195710092863,
+  "best_epoch": 5,
+  "best_val_loss": 0.3961496484486291
+}

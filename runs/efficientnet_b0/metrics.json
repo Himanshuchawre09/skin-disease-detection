@@ -1,0 +1,9 @@
+{
+  "model": "efficientnet_b0",
+  "test_accuracy": 0.9819004524886877,
+  "test_macro_precision": 0.9836929754288256,
+  "test_macro_recall": 0.9768295622684163,
+  "test_macro_f1": 0.9801644729663129,
+  "best_epoch": 7,
+  "best_val_loss": 0.028568773950554398
+}

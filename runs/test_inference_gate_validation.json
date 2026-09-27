@@ -1,0 +1,694 @@
+{
+  "threshold_percent": 18.0,
+  "total_test_images": 663,
+  "rejected_count": 98,
+  "passed_count": 565,
+  "rejected_images": [
+    {
+      "filename": "Acne_Mild_img_4942.png",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Mild\\Acne_Mild_img_4942.png",
+      "skin_pixel_percentage": 3.0653,
+      "true_disease": "Acne",
+      "true_severity": "Mild"
+    },
+    {
+      "filename": "Acne_Mild_acne-face-1-28__ProtectWyJQcm90ZWN0Il0_FocusFillWzI5NCwyMjIsIngiLDFd.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Mild\\Acne_Mild_acne-face-1-28__ProtectWyJQcm90ZWN0Il0_FocusFillWzI5NCwyMjIsIngiLDFd.jpeg",
+      "skin_pixel_percentage": 1.5058,
+      "true_disease": "Acne",
+      "true_severity": "Mild"
+    },
+    {
+      "filename": "Acne_Mild_51.png",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Mild\\Acne_Mild_51.png",
+      "skin_pixel_percentage": 10.5101,
+      "true_disease": "Acne",
+      "true_severity": "Mild"
+    },
+    {
+      "filename": "Acne_Mild_acne-face-5-4__ProtectWyJQcm90ZWN0Il0_FocusFillWzI5NCwyMjIsIngiLDFd.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Mild\\Acne_Mild_acne-face-5-4__ProtectWyJQcm90ZWN0Il0_FocusFillWzI5NCwyMjIsIngiLDFd.jpeg",
+      "skin_pixel_percentage": 16.5803,
+      "true_disease": "Acne",
+      "true_severity": "Mild"
+    },
+    {
+      "filename": "Acne_Mild_acne-cystic-9.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Mild\\Acne_Mild_acne-cystic-9.jpg",
+      "skin_pixel_percentage": 14.205,
+      "true_disease": "Acne",
+      "true_severity": "Mild"
+    },
+    {
+      "filename": "Acne_Mild_acne-excoriated-14.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Mild\\Acne_Mild_acne-excoriated-14.jpg",
+      "skin_pixel_percentage": 16.2211,
+      "true_disease": "Acne",
+      "true_severity": "Mild"
+    },
+    {
+      "filename": "Acne_Mild_acne-cystic-9.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Mild\\Acne_Mild_acne-cystic-9.jpg",
+      "skin_pixel_percentage": 14.205,
+      "true_disease": "Acne",
+      "true_severity": "Mild"
+    },
+    {
+      "filename": "Acne_Moderate_IMG_5767.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Moderate\\Acne_Moderate_IMG_5767.jpg",
+      "skin_pixel_percentage": 7.3054,
+      "true_disease": "Acne",
+      "true_severity": "Moderate"
+    },
+    {
+      "filename": "Acne_Moderate_acne-face-1-39__ProtectWyJQcm90ZWN0Il0_FocusFillWzI5NCwyMjIsInkiLDg1XQ.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Moderate\\Acne_Moderate_acne-face-1-39__ProtectWyJQcm90ZWN0Il0_FocusFillWzI5NCwyMjIsInkiLDg1XQ.jpeg",
+      "skin_pixel_percentage": 13.6334,
+      "true_disease": "Acne",
+      "true_severity": "Moderate"
+    },
+    {
+      "filename": "Acne_Moderate_IMG_5751.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Moderate\\Acne_Moderate_IMG_5751.jpg",
+      "skin_pixel_percentage": 7.308,
+      "true_disease": "Acne",
+      "true_severity": "Moderate"
+    },
+    {
+      "filename": "Acne_Moderate_acne-face-2-26__ProtectWyJQcm90ZWN0Il0_FocusFillWzI5NCwyMjIsInkiLDg1XQ.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Moderate\\Acne_Moderate_acne-face-2-26__ProtectWyJQcm90ZWN0Il0_FocusFillWzI5NCwyMjIsInkiLDg1XQ.jpeg",
+      "skin_pixel_percentage": 16.5277,
+      "true_disease": "Acne",
+      "true_severity": "Moderate"
+    },
+    {
+      "filename": "Acne_Moderate_acne-face-2-26__ProtectWyJQcm90ZWN0Il0_FocusFillWzI5NCwyMjIsInkiLDg1XQ.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Moderate\\Acne_Moderate_acne-face-2-26__ProtectWyJQcm90ZWN0Il0_FocusFillWzI5NCwyMjIsInkiLDg1XQ.jpeg",
+      "skin_pixel_percentage": 16.5277,
+      "true_disease": "Acne",
+      "true_severity": "Moderate"
+    },
+    {
+      "filename": "Acne_Moderate_IMG_5761.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Moderate\\Acne_Moderate_IMG_5761.jpg",
+      "skin_pixel_percentage": 9.8164,
+      "true_disease": "Acne",
+      "true_severity": "Moderate"
+    },
+    {
+      "filename": "Acne_Moderate_acne-039-v2__ProtectWyJQcm90ZWN0Il0_FocusFillWzI5NCwyMjIsIngiLDFd.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Moderate\\Acne_Moderate_acne-039-v2__ProtectWyJQcm90ZWN0Il0_FocusFillWzI5NCwyMjIsIngiLDFd.jpeg",
+      "skin_pixel_percentage": 16.724,
+      "true_disease": "Acne",
+      "true_severity": "Moderate"
+    },
+    {
+      "filename": "Acne_Moderate_acne-face-4-4__ProtectWyJQcm90ZWN0Il0_FocusFillWzI5NCwyMjIsIngiLDFd.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Moderate\\Acne_Moderate_acne-face-4-4__ProtectWyJQcm90ZWN0Il0_FocusFillWzI5NCwyMjIsIngiLDFd.jpeg",
+      "skin_pixel_percentage": 15.2324,
+      "true_disease": "Acne",
+      "true_severity": "Moderate"
+    },
+    {
+      "filename": "Acne_Moderate_post-367514-0-31768100-1387921341.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Moderate\\Acne_Moderate_post-367514-0-31768100-1387921341.jpg",
+      "skin_pixel_percentage": 13.8306,
+      "true_disease": "Acne",
+      "true_severity": "Moderate"
+    },
+    {
+      "filename": "Acne_Moderate_acne.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Moderate\\Acne_Moderate_acne.jpg",
+      "skin_pixel_percentage": 16.0843,
+      "true_disease": "Acne",
+      "true_severity": "Moderate"
+    },
+    {
+      "filename": "Acne_Severe_IMG_5745.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Severe\\Acne_Severe_IMG_5745.jpg",
+      "skin_pixel_percentage": 7.9615,
+      "true_disease": "Acne",
+      "true_severity": "Severe"
+    },
+    {
+      "filename": "Acne_Severe_pigmentation_0_1920.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Severe\\Acne_Severe_pigmentation_0_1920.jpeg",
+      "skin_pixel_percentage": 3.0256,
+      "true_disease": "Acne",
+      "true_severity": "Severe"
+    },
+    {
+      "filename": "Acne_Severe_pigmentation_0_192.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Severe\\Acne_Severe_pigmentation_0_192.jpeg",
+      "skin_pixel_percentage": 3.9205,
+      "true_disease": "Acne",
+      "true_severity": "Severe"
+    },
+    {
+      "filename": "Acne_Severe_acne-cystic-110.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Severe\\Acne_Severe_acne-cystic-110.jpg",
+      "skin_pixel_percentage": 2.4313,
+      "true_disease": "Acne",
+      "true_severity": "Severe"
+    },
+    {
+      "filename": "Acne_Severe_acne-cystic-118.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Severe\\Acne_Severe_acne-cystic-118.jpg",
+      "skin_pixel_percentage": 0.1708,
+      "true_disease": "Acne",
+      "true_severity": "Severe"
+    },
+    {
+      "filename": "Acne_Severe_IMG_5739.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Severe\\Acne_Severe_IMG_5739.jpg",
+      "skin_pixel_percentage": 1.8094,
+      "true_disease": "Acne",
+      "true_severity": "Severe"
+    },
+    {
+      "filename": "Acne_Severe_IMG_5739.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Severe\\Acne_Severe_IMG_5739.jpg",
+      "skin_pixel_percentage": 1.8094,
+      "true_disease": "Acne",
+      "true_severity": "Severe"
+    },
+    {
+      "filename": "Acne_Severe_167__ProtectWyJQcm90ZWN0Il0_FocusFillWzI5NCwyMjIsInkiLDg1XQ.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Severe\\Acne_Severe_167__ProtectWyJQcm90ZWN0Il0_FocusFillWzI5NCwyMjIsInkiLDg1XQ.jpeg",
+      "skin_pixel_percentage": 0.6396,
+      "true_disease": "Acne",
+      "true_severity": "Severe"
+    },
+    {
+      "filename": "Acne_Severe_pigmentation_0_178.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Severe\\Acne_Severe_pigmentation_0_178.jpeg",
+      "skin_pixel_percentage": 2.1419,
+      "true_disease": "Acne",
+      "true_severity": "Severe"
+    },
+    {
+      "filename": "Acne_Severe_acne-cystic-104.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Severe\\Acne_Severe_acne-cystic-104.jpg",
+      "skin_pixel_percentage": 7.6831,
+      "true_disease": "Acne",
+      "true_severity": "Severe"
+    },
+    {
+      "filename": "Acne_Severe_pigmentation_0_515.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Severe\\Acne_Severe_pigmentation_0_515.jpeg",
+      "skin_pixel_percentage": 2.5435,
+      "true_disease": "Acne",
+      "true_severity": "Severe"
+    },
+    {
+      "filename": "Acne_Severe_IMG_5748.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Severe\\Acne_Severe_IMG_5748.jpg",
+      "skin_pixel_percentage": 0.6443,
+      "true_disease": "Acne",
+      "true_severity": "Severe"
+    },
+    {
+      "filename": "Acne_Severe_acne-cystic-145.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Severe\\Acne_Severe_acne-cystic-145.jpg",
+      "skin_pixel_percentage": 11.7553,
+      "true_disease": "Acne",
+      "true_severity": "Severe"
+    },
+    {
+      "filename": "Acne_Severe_pigmentation_0_2807.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Severe\\Acne_Severe_pigmentation_0_2807.jpeg",
+      "skin_pixel_percentage": 2.2626,
+      "true_disease": "Acne",
+      "true_severity": "Severe"
+    },
+    {
+      "filename": "Acne_Severe_166__ProtectWyJQcm90ZWN0Il0_FocusFillWzI5NCwyMjIsIngiLDFd.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Severe\\Acne_Severe_166__ProtectWyJQcm90ZWN0Il0_FocusFillWzI5NCwyMjIsIngiLDFd.jpeg",
+      "skin_pixel_percentage": 2.2365,
+      "true_disease": "Acne",
+      "true_severity": "Severe"
+    },
+    {
+      "filename": "Acne_Severe_acne-cystic-104.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Acne_Severe\\Acne_Severe_acne-cystic-104.jpg",
+      "skin_pixel_percentage": 7.6831,
+      "true_disease": "Acne",
+      "true_severity": "Severe"
+    },
+    {
+      "filename": "Eczema_Mild_eczema-hand-128.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Mild\\Eczema_Mild_eczema-hand-128.jpg",
+      "skin_pixel_percentage": 14.401,
+      "true_disease": "Eczema",
+      "true_severity": "Mild"
+    },
+    {
+      "filename": "Eczema_Mild_eczema-nummular-174.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Mild\\Eczema_Mild_eczema-nummular-174.jpeg",
+      "skin_pixel_percentage": 15.0942,
+      "true_disease": "Eczema",
+      "true_severity": "Mild"
+    },
+    {
+      "filename": "Eczema_Mild_eczema-fingertips-100.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Mild\\Eczema_Mild_eczema-fingertips-100.jpeg",
+      "skin_pixel_percentage": 2.3828,
+      "true_disease": "Eczema",
+      "true_severity": "Mild"
+    },
+    {
+      "filename": "Eczema_Mild_Dyshidrosis-54.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Mild\\Eczema_Mild_Dyshidrosis-54.jpg",
+      "skin_pixel_percentage": 0.1444,
+      "true_disease": "Eczema",
+      "true_severity": "Mild"
+    },
+    {
+      "filename": "Eczema_Mild_eczema-foot-71.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Mild\\Eczema_Mild_eczema-foot-71.jpeg",
+      "skin_pixel_percentage": 0.0574,
+      "true_disease": "Eczema",
+      "true_severity": "Mild"
+    },
+    {
+      "filename": "Eczema_Mild_eczema-hand-128.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Mild\\Eczema_Mild_eczema-hand-128.jpeg",
+      "skin_pixel_percentage": 14.4382,
+      "true_disease": "Eczema",
+      "true_severity": "Mild"
+    },
+    {
+      "filename": "Eczema_Mild_eczema-foot-82.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Mild\\Eczema_Mild_eczema-foot-82.jpeg",
+      "skin_pixel_percentage": 6.0363,
+      "true_disease": "Eczema",
+      "true_severity": "Mild"
+    },
+    {
+      "filename": "Eczema_Mild_aug_1309_keratolysis-exfoliativa-4.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Mild\\Eczema_Mild_aug_1309_keratolysis-exfoliativa-4.jpg",
+      "skin_pixel_percentage": 0.2918,
+      "true_disease": "Eczema",
+      "true_severity": "Mild"
+    },
+    {
+      "filename": "Eczema_Mild_eczema-hyperkeratotic-2.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Mild\\Eczema_Mild_eczema-hyperkeratotic-2.jpeg",
+      "skin_pixel_percentage": 15.1241,
+      "true_disease": "Eczema",
+      "true_severity": "Mild"
+    },
+    {
+      "filename": "Eczema_Moderate_eczema-fingertips-88.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Moderate\\Eczema_Moderate_eczema-fingertips-88.jpg",
+      "skin_pixel_percentage": 11.1558,
+      "true_disease": "Eczema",
+      "true_severity": "Moderate"
+    },
+    {
+      "filename": "Eczema_Moderate_eczema-fingertips-91.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Moderate\\Eczema_Moderate_eczema-fingertips-91.jpg",
+      "skin_pixel_percentage": 0.154,
+      "true_disease": "Eczema",
+      "true_severity": "Moderate"
+    },
+    {
+      "filename": "Eczema_Moderate_eczema-asteatotic-39.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Moderate\\Eczema_Moderate_eczema-asteatotic-39.jpg",
+      "skin_pixel_percentage": 2.7045,
+      "true_disease": "Eczema",
+      "true_severity": "Moderate"
+    },
+    {
+      "filename": "Eczema_Moderate_eczema-fingertips-79.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Moderate\\Eczema_Moderate_eczema-fingertips-79.jpg",
+      "skin_pixel_percentage": 10.193,
+      "true_disease": "Eczema",
+      "true_severity": "Moderate"
+    },
+    {
+      "filename": "Eczema_Moderate_eczema-hand-192.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Moderate\\Eczema_Moderate_eczema-hand-192.jpg",
+      "skin_pixel_percentage": 1.0846,
+      "true_disease": "Eczema",
+      "true_severity": "Moderate"
+    },
+    {
+      "filename": "Eczema_Moderate_eczema-foot-90.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Moderate\\Eczema_Moderate_eczema-foot-90.jpeg",
+      "skin_pixel_percentage": 1.4522,
+      "true_disease": "Eczema",
+      "true_severity": "Moderate"
+    },
+    {
+      "filename": "Eczema_Moderate_eczema-fingertips-104.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Moderate\\Eczema_Moderate_eczema-fingertips-104.jpeg",
+      "skin_pixel_percentage": 14.0395,
+      "true_disease": "Eczema",
+      "true_severity": "Moderate"
+    },
+    {
+      "filename": "Eczema_Moderate_eczema-nummular-80.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Moderate\\Eczema_Moderate_eczema-nummular-80.jpeg",
+      "skin_pixel_percentage": 12.1962,
+      "true_disease": "Eczema",
+      "true_severity": "Moderate"
+    },
+    {
+      "filename": "Eczema_Moderate_eczema-nummular-203.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Moderate\\Eczema_Moderate_eczema-nummular-203.jpeg",
+      "skin_pixel_percentage": 0.4871,
+      "true_disease": "Eczema",
+      "true_severity": "Moderate"
+    },
+    {
+      "filename": "Eczema_Moderate_eczema-foot-97.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Moderate\\Eczema_Moderate_eczema-foot-97.jpg",
+      "skin_pixel_percentage": 1.5901,
+      "true_disease": "Eczema",
+      "true_severity": "Moderate"
+    },
+    {
+      "filename": "Eczema_Moderate_eczema-asteatotic-50.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Moderate\\Eczema_Moderate_eczema-asteatotic-50.jpg",
+      "skin_pixel_percentage": 13.3525,
+      "true_disease": "Eczema",
+      "true_severity": "Moderate"
+    },
+    {
+      "filename": "Eczema_Severe_eczema-fingertips-104.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Severe\\Eczema_Severe_eczema-fingertips-104.jpg",
+      "skin_pixel_percentage": 8.3387,
+      "true_disease": "Eczema",
+      "true_severity": "Severe"
+    },
+    {
+      "filename": "Eczema_Severe_eczema-asteatotic-49.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Severe\\Eczema_Severe_eczema-asteatotic-49.jpeg",
+      "skin_pixel_percentage": 12.9412,
+      "true_disease": "Eczema",
+      "true_severity": "Severe"
+    },
+    {
+      "filename": "Eczema_Severe_lichen-simplex-chronicus-14.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Severe\\Eczema_Severe_lichen-simplex-chronicus-14.jpg",
+      "skin_pixel_percentage": 5.3652,
+      "true_disease": "Eczema",
+      "true_severity": "Severe"
+    },
+    {
+      "filename": "Eczema_Severe_IMG_5813.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Severe\\Eczema_Severe_IMG_5813.jpg",
+      "skin_pixel_percentage": 7.7462,
+      "true_disease": "Eczema",
+      "true_severity": "Severe"
+    },
+    {
+      "filename": "Eczema_Severe_IMG_5821.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Severe\\Eczema_Severe_IMG_5821.jpg",
+      "skin_pixel_percentage": 7.9814,
+      "true_disease": "Eczema",
+      "true_severity": "Severe"
+    },
+    {
+      "filename": "Eczema_Severe_IMG_5819.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Severe\\Eczema_Severe_IMG_5819.jpg",
+      "skin_pixel_percentage": 1.2895,
+      "true_disease": "Eczema",
+      "true_severity": "Severe"
+    },
+    {
+      "filename": "Eczema_Severe_pompholyx-7.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Severe\\Eczema_Severe_pompholyx-7.jpg",
+      "skin_pixel_percentage": 16.1213,
+      "true_disease": "Eczema",
+      "true_severity": "Severe"
+    },
+    {
+      "filename": "Eczema_Severe_aug_367_lichen-simplex-chronicus-96.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Severe\\Eczema_Severe_aug_367_lichen-simplex-chronicus-96.jpg",
+      "skin_pixel_percentage": 3.0533,
+      "true_disease": "Eczema",
+      "true_severity": "Severe"
+    },
+    {
+      "filename": "Eczema_Severe_IMG_5786.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Eczema_Severe\\Eczema_Severe_IMG_5786.jpg",
+      "skin_pixel_percentage": 1.8127,
+      "true_disease": "Eczema",
+      "true_severity": "Severe"
+    },
+    {
+      "filename": "Normal_Hand_0000212.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_Hand_0000212.jpeg",
+      "skin_pixel_percentage": 9.7229,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_WhatsApp Image 2026-01-31 at 5.29.20 PM.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_WhatsApp Image 2026-01-31 at 5.29.20 PM.jpeg",
+      "skin_pixel_percentage": 13.279,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_normal06.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_normal06.jpg",
+      "skin_pixel_percentage": 9.1532,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_32dasdf.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_32dasdf.jpg",
+      "skin_pixel_percentage": 7.7926,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_Image834.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_Image834.jpeg",
+      "skin_pixel_percentage": 6.016,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_0009.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_0009.jpg",
+      "skin_pixel_percentage": 17.5385,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_Image950.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_Image950.jpeg",
+      "skin_pixel_percentage": 9.0169,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_Image898.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_Image898.jpeg",
+      "skin_pixel_percentage": 16.0868,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_78ht.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_78ht.jpg",
+      "skin_pixel_percentage": 4.1778,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_Image846.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_Image846.jpeg",
+      "skin_pixel_percentage": 11.5377,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_dry_952bb2051f1d5878e06c_jpg.rf.b67b5161d4e9bfeef6ed808b71750c73.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_dry_952bb2051f1d5878e06c_jpg.rf.b67b5161d4e9bfeef6ed808b71750c73.jpg",
+      "skin_pixel_percentage": 4.6448,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_Image777.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_Image777.jpeg",
+      "skin_pixel_percentage": 13.2284,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_Image854.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_Image854.jpeg",
+      "skin_pixel_percentage": 11.7025,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_Image958.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_Image958.jpeg",
+      "skin_pixel_percentage": 11.1511,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_3214wfgfsd.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_3214wfgfsd.jpg",
+      "skin_pixel_percentage": 1.7304,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_563456gh.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_563456gh.jpg",
+      "skin_pixel_percentage": 2.9644,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_Image880.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_Image880.jpeg",
+      "skin_pixel_percentage": 13.2182,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_Hand_0000456.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_Hand_0000456.jpeg",
+      "skin_pixel_percentage": 12.9333,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_Image306.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_Image306.jpeg",
+      "skin_pixel_percentage": 0.0244,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_Image787.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_Image787.jpeg",
+      "skin_pixel_percentage": 11.1816,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_Image885.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_Image885.jpeg",
+      "skin_pixel_percentage": 9.9447,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_Image897.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_Image897.jpeg",
+      "skin_pixel_percentage": 14.6871,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_Image881.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_Image881.jpeg",
+      "skin_pixel_percentage": 14.1886,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_Image861.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_Image861.jpeg",
+      "skin_pixel_percentage": 6.6691,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_WhatsApp Image 2026-01-31 at 5.28.58 PM.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_WhatsApp Image 2026-01-31 at 5.28.58 PM.jpeg",
+      "skin_pixel_percentage": 10.2512,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_Image796.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_Image796.jpeg",
+      "skin_pixel_percentage": 10.1074,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_dry36.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_dry36.jpeg",
+      "skin_pixel_percentage": 4.5732,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_Image241.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_Image241.jpeg",
+      "skin_pixel_percentage": 9.4238,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_Image850.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_Image850.jpeg",
+      "skin_pixel_percentage": 10.2193,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_IMG_20230623_143005.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_IMG_20230623_143005.jpg",
+      "skin_pixel_percentage": 0.0,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_Image911.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_Image911.jpeg",
+      "skin_pixel_percentage": 12.443,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_Image933.jpeg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_Image933.jpeg",
+      "skin_pixel_percentage": 11.9731,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_3412.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_3412.jpg",
+      "skin_pixel_percentage": 0.4154,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_312asd.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_312asd.jpg",
+      "skin_pixel_percentage": 6.6157,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_normal11.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_normal11.jpg",
+      "skin_pixel_percentage": 0.0228,
+      "true_disease": "Normal",
+      "true_severity": null
+    },
+    {
+      "filename": "Normal_dry_2069f90c89015e5d3f67_jpg.rf.1b16b06d9f4b800f09d93817e91a50d7.jpg",
+      "path": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\splits\\test\\Normal\\Normal_dry_2069f90c89015e5d3f67_jpg.rf.1b16b06d9f4b800f09d93817e91a50d7.jpg",
+      "skin_pixel_percentage": 3.0563,
+      "true_disease": "Normal",
+      "true_severity": null
+    }
+  ]
+}

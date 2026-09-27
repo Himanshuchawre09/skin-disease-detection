@@ -1,0 +1,46 @@
+{
+  "manifest": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\data\\dataset_manifest.csv",
+  "total_test_images": 663,
+  "completed_predictions": 663,
+  "errors_count": 0,
+  "errors": [],
+  "disease_accuracy": 0.9909502262443439,
+  "disease_correct": 657,
+  "disease_counts": {
+    "Acne": {
+      "total": 279,
+      "correct": 278,
+      "accuracy": 0.996415770609319
+    },
+    "Eczema": {
+      "total": 287,
+      "correct": 282,
+      "accuracy": 0.9825783972125436
+    },
+    "Normal": {
+      "total": 97,
+      "correct": 97,
+      "accuracy": 1.0
+    }
+  },
+  "severity_counts": {
+    "Acne": {
+      "all_true_disease_images": 279,
+      "end_to_end_correct": 247,
+      "end_to_end_accuracy": 0.8853046594982079,
+      "correctly_routed_to_severity_model": 278,
+      "conditional_severity_correct": 247,
+      "conditional_severity_accuracy": 0.8884892086330936
+    },
+    "Eczema": {
+      "all_true_disease_images": 287,
+      "end_to_end_correct": 195,
+      "end_to_end_accuracy": 0.6794425087108014,
+      "correctly_routed_to_severity_model": 282,
+      "conditional_severity_correct": 195,
+      "conditional_severity_accuracy": 0.6914893617021277
+    }
+  },
+  "normal_images_with_severity_prediction": 0,
+  "normal_severity_violations": []
+}

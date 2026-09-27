@@ -1,0 +1,35 @@
+=================================================================
+DATASET EXPLORATORY DATA ANALYSIS (EDA) REPORT
+=================================================================
+Total Authentic Images Analyzed: 4377
+
+[1. COLOR CHANNELS / COLOR SPACE]
+  Mode RGB   :  4151 images (94.8%)
+  Mode RGBA  :   220 images (5.0%)
+  Mode P     :     6 images (0.1%)
+
+[2. RESOLUTION METRICS]
+  Width:  Min = 67px, Max = 4729px, Mean = 667.2px, Median = 720px
+  Height: Min = 51px, Max = 4028px, Mean = 598.3px, Median = 480px
+  Recommended Model Input Size: 224x224 (Standard for EfficientNet/ResNet)
+
+[3. DISEASE DISTRIBUTION (STAGE 1)]
+split    test  train  val  Total Percentage
+disease                                    
+Acne      279   1287  274   1840      42.0%
+Eczema    287   1328  283   1898      43.4%
+Normal     97    447   95    639      14.6%
+
+[4. SEVERITY DISTRIBUTION (STAGE 2 - ACNE)]
+split     test  train  val  Total
+severity                         
+Mild        92    426   91    609
+Moderate    92    424   90    606
+Severe      95    437   93    625
+
+[5. SEVERITY DISTRIBUTION (STAGE 2 - ECZEMA)]
+split     test  train  val  Total
+severity                         
+Mild        96    445   95    636
+Moderate    96    442   94    632
+Severe      95    441   94    630

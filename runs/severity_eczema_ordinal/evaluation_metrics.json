@@ -1,0 +1,24 @@
+{
+  "checkpoint": "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\skin_disease_project\\runs\\severity_eczema_ordinal\\best_model.pt",
+  "checkpoint_best_epoch": 15,
+  "test_examples": 287,
+  "accuracy": 0.6968641114982579,
+  "ordinal_mae": 0.313588850174216,
+  "confusion_matrix": [
+    [
+      71,
+      22,
+      3
+    ],
+    [
+      22,
+      58,
+      16
+    ],
+    [
+      0,
+      24,
+      71
+    ]
+  ]
+}

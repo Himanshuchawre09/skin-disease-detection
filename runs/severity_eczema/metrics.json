@@ -1,0 +1,10 @@
+{
+  "disease": "Eczema",
+  "arch": "resnet50",
+  "test_accuracy": 0.6445993031358885,
+  "test_macro_precision": 0.6528210453444099,
+  "test_macro_recall": 0.6447002923976607,
+  "test_macro_f1": 0.6478137441429989,
+  "best_epoch": 3,
+  "best_val_loss": 0.676184068720248
+}

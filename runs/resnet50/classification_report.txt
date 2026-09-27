@@ -1,0 +1,14 @@
+              precision    recall  f1-score   support
+
+        Acne     0.9929    0.9964    0.9946       279
+      Eczema     0.9965    0.9826    0.9895       287
+      Normal     0.9700    1.0000    0.9848        97
+
+    accuracy                         0.9910       663
+   macro avg     0.9864    0.9930    0.9896       663
+weighted avg     0.9911    0.9910    0.9910       663
+
+Overall accuracy: 0.990950
+Macro precision: 0.986441
+Macro recall: 0.992998
+Macro F1: 0.989626

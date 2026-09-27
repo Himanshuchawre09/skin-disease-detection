@@ -1,0 +1,288 @@
+filename,category,severity,true_index,predicted_severity,predicted_index,confidence
+Eczema_Mild_eczema-face-8.jpg,Eczema_Mild,Mild,0,Mild,0,0.9269874691963196
+Eczema_Mild_eczema-nummular-101.jpg,Eczema_Mild,Mild,0,Moderate,1,0.4964841902256012
+Eczema_Mild_eczema-nummular-139.jpg,Eczema_Mild,Mild,0,Mild,0,0.7456715703010559
+Eczema_Mild_Dyshidrosis-18.jpg,Eczema_Mild,Mild,0,Mild,0,0.8361603617668152
+Eczema_Mild_eczema-chronic-4.jpg,Eczema_Mild,Mild,0,Mild,0,0.9353001713752747
+Eczema_Mild_eczema-hand-106.jpg,Eczema_Mild,Mild,0,Moderate,1,0.5260616540908813
+Eczema_Mild_lichen-simplex-chronicus-181.jpg,Eczema_Mild,Mild,0,Mild,0,0.7713251113891602
+Eczema_Mild_eczema-trunk-generalized-9.jpg,Eczema_Mild,Mild,0,Mild,0,0.5514075756072998
+Eczema_Mild_eczema-hand-128.jpg,Eczema_Mild,Mild,0,Mild,0,0.9739460349082947
+Eczema_Mild_eczema-fingertips-128.jpg,Eczema_Mild,Mild,0,Moderate,1,0.38599511981010437
+Eczema_Mild_eczema-fingertips-134.jpeg,Eczema_Mild,Mild,0,Mild,0,0.9329344630241394
+Eczema_Mild_eczema-fingertips-125.jpg,Eczema_Mild,Mild,0,Moderate,1,0.8478386402130127
+Eczema_Mild_eczema-nummular-174.jpeg,Eczema_Mild,Mild,0,Mild,0,0.9326906204223633
+Eczema_Mild_eczema-fingertips-33.jpeg,Eczema_Mild,Mild,0,Mild,0,0.9446958303451538
+Eczema_Mild_lichen-simplex-chronicus-189.jpg,Eczema_Mild,Mild,0,Moderate,1,0.8272800445556641
+Eczema_Mild_lichen-simplex-chronicus-181.jpg,Eczema_Mild,Mild,0,Mild,0,0.7713251113891602
+Eczema_Mild_Screenshot 2025-11-16 230229.png,Eczema_Mild,Mild,0,Severe,2,0.4906352162361145
+Eczema_Mild_WhatsApp Image 2025-11-13 at 9.08.34 AM.jpeg,Eczema_Mild,Mild,0,Mild,0,0.5910851955413818
+Eczema_Mild_eczema-fingertips-100.jpeg,Eczema_Mild,Mild,0,Mild,0,0.7659181356430054
+Eczema_Mild_Dyshidrosis-54.jpg,Eczema_Mild,Mild,0,Mild,0,0.6132246851921082
+Eczema_Mild_WhatsApp Image 2025-11-13 at 9.07.23 AM.jpeg,Eczema_Mild,Mild,0,Mild,0,0.6341870427131653
+Eczema_Mild_eczema-subacute-11.jpeg,Eczema_Mild,Mild,0,Mild,0,0.7090045213699341
+Eczema_Mild_eczema-asteatotic-21.jpg,Eczema_Mild,Mild,0,Mild,0,0.7574217319488525
+Eczema_Mild_eczema-foot-71.jpeg,Eczema_Mild,Mild,0,Moderate,1,0.8718001246452332
+Eczema_Mild_eczema-scrotum-4.jpg,Eczema_Mild,Mild,0,Mild,0,0.7735630869865417
+Eczema_Mild_eczema-chronic-19.jpg,Eczema_Mild,Mild,0,Mild,0,0.5732278227806091
+Eczema_Mild_eczema-nummular-152.jpg,Eczema_Mild,Mild,0,Moderate,1,0.49522534012794495
+Eczema_Mild_eczema-hand-128.jpeg,Eczema_Mild,Mild,0,Mild,0,0.9145010113716125
+Eczema_Mild_eczema-asteatotic-9.jpg,Eczema_Mild,Mild,0,Mild,0,0.751829206943512
+Eczema_Mild_eczema-leg-18.jpg,Eczema_Mild,Mild,0,Mild,0,0.9706865549087524
+Eczema_Mild_aug_839_eczema-asteatotic-7.jpg,Eczema_Mild,Mild,0,Mild,0,0.8075488209724426
+Eczema_Mild_Screenshot 2025-11-17 011532.png,Eczema_Mild,Mild,0,Severe,2,0.6883406639099121
+Eczema_Mild_fissure-9.jpg,Eczema_Mild,Mild,0,Moderate,1,0.6603344082832336
+Eczema_Mild_aug_214_eczema-hand-89.jpg,Eczema_Mild,Mild,0,Mild,0,0.8841809034347534
+Eczema_Mild_Screenshot 2025-11-16 200904.png,Eczema_Mild,Mild,0,Mild,0,0.46151959896087646
+Eczema_Mild_Dyshidrosis-50.jpg,Eczema_Mild,Mild,0,Mild,0,0.9436485171318054
+Eczema_Mild_eczema-asteatotic-21.jpeg,Eczema_Mild,Mild,0,Mild,0,0.8593184351921082
+Eczema_Mild_eczema-lids-8.jpeg,Eczema_Mild,Mild,0,Mild,0,0.9985015392303467
+Eczema_Mild_eczema-foot-82.jpeg,Eczema_Mild,Mild,0,Moderate,1,0.44500401616096497
+Eczema_Mild_aug_1309_keratolysis-exfoliativa-4.jpg,Eczema_Mild,Mild,0,Mild,0,0.816952645778656
+Eczema_Mild_eczema-fingertips-66.jpg,Eczema_Mild,Mild,0,Mild,0,0.7692724466323853
+Eczema_Mild_lichen-simplex-chronicus-184.jpg,Eczema_Mild,Mild,0,Mild,0,0.9610700607299805
+Eczema_Mild_eczema-nummular-94.jpg,Eczema_Mild,Mild,0,Mild,0,0.8864133954048157
+Eczema_Mild_pompholyx-3.jpg,Eczema_Mild,Mild,0,Moderate,1,0.5660459995269775
+Eczema_Mild_eczema-nummular-19.jpg,Eczema_Mild,Mild,0,Mild,0,0.9640750885009766
+Eczema_Mild_eczema-hand-100.jpg,Eczema_Mild,Mild,0,Mild,0,0.5013564825057983
+Eczema_Mild_eczema-hand-102.jpeg,Eczema_Mild,Mild,0,Moderate,1,0.577090859413147
+Eczema_Mild_WhatsApp Image 2025-11-13 at 9.09.46 AM.jpeg,Eczema_Mild,Mild,0,Mild,0,0.44324254989624023
+Eczema_Mild_eczema-fingertips-78.jpg,Eczema_Mild,Mild,0,Moderate,1,0.7511218786239624
+Eczema_Mild_eczema-subacute-77.jpg,Eczema_Mild,Mild,0,Mild,0,0.9923542737960815
+Eczema_Mild_eczema-trunk-generalized-12.jpg,Eczema_Mild,Mild,0,Severe,2,0.7909137010574341
+Eczema_Mild_eczema-chronic-42.jpg,Eczema_Mild,Mild,0,Moderate,1,0.5385684967041016
+Eczema_Mild_eczema-nummular-101.jpg,Eczema_Mild,Mild,0,Moderate,1,0.4964841902256012
+Eczema_Mild_eczema-hand-93.jpeg,Eczema_Mild,Mild,0,Severe,2,0.5186200737953186
+Eczema_Mild_lichen-simplex-chronicus-167.jpg,Eczema_Mild,Mild,0,Mild,0,0.8960542678833008
+Eczema_Mild_eczema-hyperkeratotic-1.jpeg,Eczema_Mild,Mild,0,Mild,0,0.8656939268112183
+Eczema_Mild_eczema-nummular-167.jpeg,Eczema_Mild,Mild,0,Mild,0,0.9080796241760254
+Eczema_Mild_keratolysis-exfoliativa-23.jpg,Eczema_Mild,Mild,0,Mild,0,0.6182171106338501
+Eczema_Mild_eczema-nummular-185.jpeg,Eczema_Mild,Mild,0,Moderate,1,0.5316265225410461
+Eczema_Mild_Dyshidrosis-46.jpg,Eczema_Mild,Mild,0,Mild,0,0.6523373126983643
+Eczema_Mild_eczema-fingertips-115.jpg,Eczema_Mild,Mild,0,Mild,0,0.9413866400718689
+Eczema_Mild_eczema-foot-46.jpg,Eczema_Mild,Mild,0,Mild,0,0.7439274787902832
+Eczema_Mild_eczema-ears-4.jpeg,Eczema_Mild,Mild,0,Mild,0,0.9795178174972534
+Eczema_Mild_aug_1023_eczema-nummular-152.jpg,Eczema_Mild,Mild,0,Moderate,1,0.5227506160736084
+Eczema_Mild_eczema-nummular-128.jpg,Eczema_Mild,Mild,0,Moderate,1,0.5433308482170105
+Eczema_Mild_eczema-asteatotic-24.jpg,Eczema_Mild,Mild,0,Mild,0,0.9120334386825562
+Eczema_Mild_eczema-asteatotic-53.jpg,Eczema_Mild,Mild,0,Mild,0,0.7870060205459595
+Eczema_Mild_eczema-hand-98.jpg,Eczema_Mild,Mild,0,Moderate,1,0.48115769028663635
+Eczema_Mild_eczema-chronic-2.jpeg,Eczema_Mild,Mild,0,Mild,0,0.848074197769165
+Eczema_Mild_eczema-hand-95.jpeg,Eczema_Mild,Mild,0,Mild,0,0.756854772567749
+Eczema_Mild_eczema-fingertips-131.jpeg,Eczema_Mild,Mild,0,Mild,0,0.8923765420913696
+Eczema_Mild_lichen-simplex-chronicus-173.jpg,Eczema_Mild,Mild,0,Mild,0,0.9701145887374878
+Eczema_Mild_eczema-chronic-16.jpeg,Eczema_Mild,Mild,0,Moderate,1,0.5266819000244141
+Eczema_Mild_Screenshot 2025-11-16 225645.png,Eczema_Mild,Mild,0,Severe,2,0.8375704288482666
+Eczema_Mild_eczema-fingertips-57.jpeg,Eczema_Mild,Mild,0,Mild,0,0.9843528866767883
+Eczema_Mild_aug_440_eczema-chronic-23.jpg,Eczema_Mild,Mild,0,Moderate,1,0.5820357799530029
+Eczema_Mild_eczema-foot-59.jpeg,Eczema_Mild,Mild,0,Mild,0,0.9676607251167297
+Eczema_Mild_eczema-fingertips-116.jpeg,Eczema_Mild,Mild,0,Mild,0,0.906275749206543
+Eczema_Mild_eczema-asteatotic-54.jpg,Eczema_Mild,Mild,0,Moderate,1,0.6117475628852844
+Eczema_Mild_eczema-impetiginized-6.jpeg,Eczema_Mild,Mild,0,Mild,0,0.7847480177879333
+Eczema_Mild_aug_50_eczema-fingertips-115.jpg,Eczema_Mild,Mild,0,Mild,0,0.9461097121238708
+Eczema_Mild_Screenshot 2025-11-17 012607.png,Eczema_Mild,Mild,0,Mild,0,0.5007394552230835
+Eczema_Mild_eczema-hand-151.jpeg,Eczema_Mild,Mild,0,Moderate,1,0.6190965175628662
+Eczema_Mild_eczema-foot-59.jpg,Eczema_Mild,Mild,0,Mild,0,0.9509889483451843
+Eczema_Mild_Screenshot 2025-11-17 011433.png,Eczema_Mild,Mild,0,Mild,0,0.698406994342804
+Eczema_Mild_eczema-hyperkeratotic-2.jpeg,Eczema_Mild,Mild,0,Mild,0,0.5294610261917114
+Eczema_Mild_eczema-subacute-52.jpg,Eczema_Mild,Mild,0,Mild,0,0.9698857665061951
+Eczema_Mild_eczema-subacute-48.jpg,Eczema_Mild,Mild,0,Mild,0,0.738979697227478
+Eczema_Mild_eczema-nummular-176.jpeg,Eczema_Mild,Mild,0,Mild,0,0.6736014485359192
+Eczema_Mild_eczema-nummular-19.jpg,Eczema_Mild,Mild,0,Mild,0,0.9640750885009766
+Eczema_Mild_eczema-lids-12.jpg,Eczema_Mild,Mild,0,Mild,0,0.9789025783538818
+Eczema_Mild_Screenshot 2025-11-17 012224.png,Eczema_Mild,Mild,0,Mild,0,0.5713143348693848
+Eczema_Mild_lichen-simplex-chronicus-184.jpg,Eczema_Mild,Mild,0,Mild,0,0.9610700607299805
+Eczema_Mild_eczema-nummular-189.jpg,Eczema_Mild,Mild,0,Moderate,1,0.590307354927063
+Eczema_Mild_eczema-asteatotic-8.jpeg,Eczema_Mild,Mild,0,Moderate,1,0.4738301932811737
+Eczema_Mild_eczema-subacute-15.jpeg,Eczema_Mild,Mild,0,Moderate,1,0.6725387573242188
+Eczema_Moderate_eczema-chronic-19.jpg,Eczema_Moderate,Moderate,1,Mild,0,0.5713890790939331
+Eczema_Moderate_aug_346_eczema-chronic-41.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.4914722144603729
+Eczema_Moderate_Screenshot 2025-11-16 203017.png,Eczema_Moderate,Moderate,1,Severe,2,0.5568704009056091
+Eczema_Moderate_eczema-fingertips-75.jpeg,Eczema_Moderate,Moderate,1,Moderate,1,0.5590898394584656
+Eczema_Moderate_eczema-foot-18.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.8616154789924622
+Eczema_Moderate_eczema-leg-11.jpeg,Eczema_Moderate,Moderate,1,Moderate,1,0.8551594614982605
+Eczema_Moderate_eczema-hand-129.jpg,Eczema_Moderate,Moderate,1,Severe,2,0.5548186302185059
+Eczema_Moderate_eczema-fingertips-88.jpg,Eczema_Moderate,Moderate,1,Mild,0,0.7719829678535461
+Eczema_Moderate_eczema-nummular-156.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.7622623443603516
+Eczema_Moderate_eczema-asteatotic-5.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.9308601021766663
+Eczema_Moderate_eczema-nummular-159.jpeg,Eczema_Moderate,Moderate,1,Mild,0,0.8693090677261353
+Eczema_Moderate_eczema-hand-149.jpg,Eczema_Moderate,Moderate,1,Mild,0,0.8035306334495544
+Eczema_Moderate_aug_161_eczema-chronic-16.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.5339183211326599
+Eczema_Moderate_eczema-leg-20.jpeg,Eczema_Moderate,Moderate,1,Severe,2,0.5200332403182983
+Eczema_Moderate_eczema-fingertips-44.jpeg,Eczema_Moderate,Moderate,1,Moderate,1,0.7120990753173828
+Eczema_Moderate_eczema-arms-4.jpeg,Eczema_Moderate,Moderate,1,Moderate,1,0.6919156908988953
+Eczema_Moderate_eczema-foot-17.jpeg,Eczema_Moderate,Moderate,1,Moderate,1,0.8469802141189575
+Eczema_Moderate_eczema-hand-16.jpg,Eczema_Moderate,Moderate,1,Mild,0,0.8475404381752014
+Eczema_Moderate_eczema-nummular-105.jpeg,Eczema_Moderate,Moderate,1,Mild,0,0.7767816781997681
+Eczema_Moderate_eczema-fingertips-91.jpg,Eczema_Moderate,Moderate,1,Severe,2,0.9683781862258911
+Eczema_Moderate_Dyshidrosis-9.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.8016519546508789
+Eczema_Moderate_eczema-leg-9.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.9076721668243408
+Eczema_Moderate_eczema-asteatotic-3.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.8540131449699402
+Eczema_Moderate_eczema-arms-3.jpeg,Eczema_Moderate,Moderate,1,Moderate,1,0.7351911067962646
+Eczema_Moderate_eczema-asteatotic-39.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.6256510615348816
+Eczema_Moderate_lichen-simplex-chronicus-189.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.9463425278663635
+Eczema_Moderate_eczema-trunk-generalized-29.jpeg,Eczema_Moderate,Moderate,1,Moderate,1,0.75198894739151
+Eczema_Moderate_eczema-fingertips-79.jpg,Eczema_Moderate,Moderate,1,Severe,2,0.9199031591415405
+Eczema_Moderate_eczema-nummular-104.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.802253782749176
+Eczema_Moderate_eczema-leg-7.jpeg,Eczema_Moderate,Moderate,1,Moderate,1,0.9961584210395813
+Eczema_Moderate_eczema-hand-141.jpeg,Eczema_Moderate,Moderate,1,Moderate,1,0.44818681478500366
+Eczema_Moderate_eczema-fingertips-108.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.8586691617965698
+Eczema_Moderate_eczema-fingertips-70.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.8848491311073303
+Eczema_Moderate_eczema-foot-61.jpg,Eczema_Moderate,Moderate,1,Severe,2,0.8885799646377563
+Eczema_Moderate_eczema-subacute-60.jpg,Eczema_Moderate,Moderate,1,Mild,0,0.6133071780204773
+Eczema_Moderate_eczema-asteatotic-10.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.7577675580978394
+Eczema_Moderate_lichen-simplex-chronicus-147.jpg,Eczema_Moderate,Moderate,1,Mild,0,0.9506282806396484
+Eczema_Moderate_eczema-hand-192.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.5181699991226196
+Eczema_Moderate_eczema-nummular-160.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.9454848170280457
+Eczema_Moderate_aug_68_eczema-nummular-148.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.9719236493110657
+Eczema_Moderate_eczema-foot-90.jpeg,Eczema_Moderate,Moderate,1,Moderate,1,0.48638221621513367
+Eczema_Moderate_eczema-chronic-54.jpg,Eczema_Moderate,Moderate,1,Severe,2,0.8698089718818665
+Eczema_Moderate_eczema-asteatotic-4.jpeg,Eczema_Moderate,Moderate,1,Moderate,1,0.5820870399475098
+Eczema_Moderate_eczema-asteatotic-9.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.6615400910377502
+Eczema_Moderate_eczema-foot-42.jpg,Eczema_Moderate,Moderate,1,Mild,0,0.7497995495796204
+Eczema_Moderate_Screenshot 2025-11-16 232954.png,Eczema_Moderate,Moderate,1,Severe,2,0.6199254393577576
+Eczema_Moderate_aug_100_eczema-nummular-127.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.8802363276481628
+Eczema_Moderate_eczema-nummular-103.jpeg,Eczema_Moderate,Moderate,1,Moderate,1,0.6443468332290649
+Eczema_Moderate_lichen-simplex-chronicus-196.jpg,Eczema_Moderate,Moderate,1,Mild,0,0.8751187920570374
+Eczema_Moderate_eczema-foot-66.jpeg,Eczema_Moderate,Moderate,1,Severe,2,0.4931355118751526
+Eczema_Moderate_Screenshot 2025-11-17 012141.png,Eczema_Moderate,Moderate,1,Severe,2,0.8340256214141846
+Eczema_Moderate_eczema-fingertips-104.jpeg,Eczema_Moderate,Moderate,1,Severe,2,0.7523530125617981
+Eczema_Moderate_eczema-nummular-80.jpeg,Eczema_Moderate,Moderate,1,Mild,0,0.6659801006317139
+Eczema_Moderate_eczema-fingertips-53.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.8091089129447937
+Eczema_Moderate_Screenshot 2025-11-17 001704.png,Eczema_Moderate,Moderate,1,Moderate,1,0.8108007907867432
+Eczema_Moderate_eczema-fingertips-85.jpeg,Eczema_Moderate,Moderate,1,Mild,0,0.9867477416992188
+Eczema_Moderate_eczema-fingertips-123.jpeg,Eczema_Moderate,Moderate,1,Severe,2,0.8844106197357178
+Eczema_Moderate_Screenshot 2025-11-17 012119.png,Eczema_Moderate,Moderate,1,Moderate,1,0.8929818272590637
+Eczema_Moderate_eczema-chronic-44.jpeg,Eczema_Moderate,Moderate,1,Severe,2,0.5004804134368896
+Eczema_Moderate_eczema-leg-9.jpeg,Eczema_Moderate,Moderate,1,Moderate,1,0.893158495426178
+Eczema_Moderate_eczema-nummular-81.jpg,Eczema_Moderate,Moderate,1,Mild,0,0.6169244647026062
+Eczema_Moderate_eczema-subacute-36.jpg,Eczema_Moderate,Moderate,1,Severe,2,0.6156560182571411
+Eczema_Moderate_eczema-fingertips-17.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.9636719226837158
+Eczema_Moderate_eczema-nummular-182.jpeg,Eczema_Moderate,Moderate,1,Moderate,1,0.7584260106086731
+Eczema_Moderate_eczema-arms-5.jpeg,Eczema_Moderate,Moderate,1,Severe,2,0.9182150363922119
+Eczema_Moderate_eczema-hand-118.jpeg,Eczema_Moderate,Moderate,1,Moderate,1,0.6420584321022034
+Eczema_Moderate_lichen-simplex-chronicus-94.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.692182183265686
+Eczema_Moderate_eczema-impetiginized-7.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.7978687286376953
+Eczema_Moderate_eczema-subacute-2.jpg,Eczema_Moderate,Moderate,1,Mild,0,0.814348042011261
+Eczema_Moderate_eczema-chronic-15.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.6502537131309509
+Eczema_Moderate_eczema-hand-107.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.5590718984603882
+Eczema_Moderate_eczema-hand-87.jpeg,Eczema_Moderate,Moderate,1,Mild,0,0.6574563980102539
+Eczema_Moderate_Screenshot 2025-11-16 202904.png,Eczema_Moderate,Moderate,1,Severe,2,0.8970693945884705
+Eczema_Moderate_chapped-fissured-feet-2.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.6725163459777832
+Eczema_Moderate_eczema-nummular-203.jpeg,Eczema_Moderate,Moderate,1,Moderate,1,0.45769786834716797
+Eczema_Moderate_WhatsApp Image 2025-11-14 at 7.50.10 AM.jpeg,Eczema_Moderate,Moderate,1,Moderate,1,0.7098802328109741
+Eczema_Moderate_eczema-acute-9.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.5347100496292114
+Eczema_Moderate_eczema-hand-106.jpeg,Eczema_Moderate,Moderate,1,Moderate,1,0.5169484615325928
+Eczema_Moderate_aug_1080_Dyshidrosis-3.jpg,Eczema_Moderate,Moderate,1,Severe,2,0.9288049936294556
+Eczema_Moderate_eczema-nummular-183.jpg,Eczema_Moderate,Moderate,1,Severe,2,0.6277580857276917
+Eczema_Moderate_eczema-fingertips-72.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.6068283915519714
+Eczema_Moderate_eczema-hand-157.jpeg,Eczema_Moderate,Moderate,1,Moderate,1,0.5218049883842468
+Eczema_Moderate_eczema-asteatotic-11.jpg,Eczema_Moderate,Moderate,1,Mild,0,0.5142141580581665
+Eczema_Moderate_eczema-foot-97.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.6518367528915405
+Eczema_Moderate_aug_167_eczema-chronic-3.jpg,Eczema_Moderate,Moderate,1,Mild,0,0.48120859265327454
+Eczema_Moderate_Screenshot 2025-11-17 162040.png,Eczema_Moderate,Moderate,1,Severe,2,0.990285336971283
+Eczema_Moderate_aug_401_lichen-simplex-chronicus-181.jpg,Eczema_Moderate,Moderate,1,Mild,0,0.5667486786842346
+Eczema_Moderate_eczema-nummular-98.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.9673170447349548
+Eczema_Moderate_eczema-nummular-84.jpeg,Eczema_Moderate,Moderate,1,Mild,0,0.9694426655769348
+Eczema_Moderate_eczema-face-4.jpeg,Eczema_Moderate,Moderate,1,Moderate,1,0.561818540096283
+Eczema_Moderate_eczema-arms-11.jpg,Eczema_Moderate,Moderate,1,Mild,0,0.4771486520767212
+Eczema_Moderate_eczema-asteatotic-50.jpg,Eczema_Moderate,Moderate,1,Severe,2,0.6682595014572144
+Eczema_Moderate_eczema-fingertips-49.jpeg,Eczema_Moderate,Moderate,1,Severe,2,0.5758697986602783
+Eczema_Moderate_eczema-nummular-130.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.8487556576728821
+Eczema_Moderate_eczema-hand-154.jpeg,Eczema_Moderate,Moderate,1,Moderate,1,0.6046699285507202
+Eczema_Moderate_lichen-simplex-chronicus-12.jpg,Eczema_Moderate,Moderate,1,Moderate,1,0.49681299924850464
+Eczema_Severe_eczema-impetiginized-4.jpeg,Eczema_Severe,Severe,2,Moderate,1,0.7145254015922546
+Eczema_Severe_eczema-hand-189.jpg,Eczema_Severe,Severe,2,Severe,2,0.9801784157752991
+Eczema_Severe_Screenshot 2025-11-16 194820.png,Eczema_Severe,Severe,2,Severe,2,0.8888757824897766
+Eczema_Severe_eczema-subacute-111.jpeg,Eczema_Severe,Severe,2,Moderate,1,0.7187745571136475
+Eczema_Severe_eczema-fingertips-39.jpg,Eczema_Severe,Severe,2,Severe,2,0.9732909798622131
+Eczema_Severe_eczema-leg-16.jpg,Eczema_Severe,Severe,2,Severe,2,0.9032618403434753
+Eczema_Severe_eczema-subacute-74.jpg,Eczema_Severe,Severe,2,Severe,2,0.9161946773529053
+Eczema_Severe_Screenshot 2025-11-17 010859.png,Eczema_Severe,Severe,2,Severe,2,0.9591209292411804
+Eczema_Severe_eczema-chronic-21.jpg,Eczema_Severe,Severe,2,Severe,2,0.9658832550048828
+Eczema_Severe_Screenshot 2025-11-17 001048.png,Eczema_Severe,Severe,2,Severe,2,0.40796345472335815
+Eczema_Severe_aug_126_eczema-subacute-53.jpg,Eczema_Severe,Severe,2,Severe,2,0.9562296867370605
+Eczema_Severe_eczema-arms-4.jpg,Eczema_Severe,Severe,2,Moderate,1,0.7403748631477356
+Eczema_Severe_eczema-foot-54.jpg,Eczema_Severe,Severe,2,Mild,0,0.493665486574173
+Eczema_Severe_aug_1307_eczema-leg-11.jpg,Eczema_Severe,Severe,2,Moderate,1,0.8076741695404053
+Eczema_Severe_Screenshot 2025-11-17 015525.png,Eczema_Severe,Severe,2,Severe,2,0.9785167574882507
+Eczema_Severe_eczema-subacute-54.jpg,Eczema_Severe,Severe,2,Severe,2,0.9515087604522705
+Eczema_Severe_eczema-subacute-97.jpeg,Eczema_Severe,Severe,2,Moderate,1,0.5267179608345032
+Eczema_Severe_Screenshot 2025-11-17 015525.png,Eczema_Severe,Severe,2,Severe,2,0.9785167574882507
+Eczema_Severe_Screenshot 2025-11-16 182156.png,Eczema_Severe,Severe,2,Severe,2,0.9452843070030212
+Eczema_Severe_Screenshot 2025-11-16 175121.png,Eczema_Severe,Severe,2,Severe,2,0.9875539541244507
+Eczema_Severe_Screenshot 2025-11-17 000329.png,Eczema_Severe,Severe,2,Severe,2,0.9993046522140503
+Eczema_Severe_Screenshot 2025-11-16 202819.png,Eczema_Severe,Severe,2,Severe,2,0.9725722670555115
+Eczema_Severe_aug_1303_prurigo-nodularis-8.jpg,Eczema_Severe,Severe,2,Severe,2,0.9529233574867249
+Eczema_Severe_eczema-fingertips-104.jpg,Eczema_Severe,Severe,2,Severe,2,0.8583129048347473
+Eczema_Severe_Screenshot 2025-11-17 011706.png,Eczema_Severe,Severe,2,Severe,2,0.9444972276687622
+Eczema_Severe_eczema-foot-16.jpg,Eczema_Severe,Severe,2,Mild,0,0.8811296224594116
+Eczema_Severe_Screenshot 2025-11-16 193954.png,Eczema_Severe,Severe,2,Severe,2,0.8320714831352234
+Eczema_Severe_eczema-subacute-22.jpeg,Eczema_Severe,Severe,2,Moderate,1,0.48211270570755005
+Eczema_Severe_eczema-trunk-generalized-32.jpg,Eczema_Severe,Severe,2,Moderate,1,0.5686769485473633
+Eczema_Severe_eczema-asteatotic-49.jpeg,Eczema_Severe,Severe,2,Severe,2,0.9717558026313782
+Eczema_Severe_eczema-hand-186.jpg,Eczema_Severe,Severe,2,Severe,2,0.9492188692092896
+Eczema_Severe_eczema-hand-115.jpg,Eczema_Severe,Severe,2,Moderate,1,0.5438290238380432
+Eczema_Severe_lichen-simplex-chronicus-14.jpg,Eczema_Severe,Severe,2,Severe,2,0.6508702635765076
+Eczema_Severe_eczema-nummular-191.jpeg,Eczema_Severe,Severe,2,Moderate,1,0.6908019185066223
+Eczema_Severe_IMG_5813.jpg,Eczema_Severe,Severe,2,Severe,2,0.7493535876274109
+Eczema_Severe_eczema-foot-70.jpg,Eczema_Severe,Severe,2,Moderate,1,0.9737216234207153
+Eczema_Severe_Screenshot 2025-11-16 204532.png,Eczema_Severe,Severe,2,Severe,2,0.9970082640647888
+Eczema_Severe_aug_167_Dyshidrosis-31.jpg,Eczema_Severe,Severe,2,Severe,2,0.9871701598167419
+Eczema_Severe_eczema-arms-6.jpeg,Eczema_Severe,Severe,2,Severe,2,0.8503486514091492
+Eczema_Severe_lichen-simplex-chronicus-170.jpg,Eczema_Severe,Severe,2,Severe,2,0.7419876456260681
+Eczema_Severe_Screenshot 2025-11-16 235346.png,Eczema_Severe,Severe,2,Moderate,1,0.5391005873680115
+Eczema_Severe_Screenshot 2025-11-16 195105.png,Eczema_Severe,Severe,2,Severe,2,0.9907407760620117
+Eczema_Severe_eczema-hand-129.jpeg,Eczema_Severe,Severe,2,Severe,2,0.477032870054245
+Eczema_Severe_eczema-foot-11.jpeg,Eczema_Severe,Severe,2,Moderate,1,0.9106552004814148
+Eczema_Severe_IMG_5821.jpg,Eczema_Severe,Severe,2,Severe,2,0.9773692488670349
+Eczema_Severe_aug_245_eczema-nummular-190.jpg,Eczema_Severe,Severe,2,Severe,2,0.7735536098480225
+Eczema_Severe_eczema-foot-20.jpg,Eczema_Severe,Severe,2,Severe,2,0.9006174206733704
+Eczema_Severe_Screenshot 2025-11-17 011254.png,Eczema_Severe,Severe,2,Severe,2,0.48838305473327637
+Eczema_Severe_Screenshot 2025-11-17 001523.png,Eczema_Severe,Severe,2,Severe,2,0.8223363757133484
+Eczema_Severe_eczema-impetiginized-10.jpg,Eczema_Severe,Severe,2,Severe,2,0.9514227509498596
+Eczema_Severe_eczema-fingertips-21.jpg,Eczema_Severe,Severe,2,Severe,2,0.9124147295951843
+Eczema_Severe_IMG_5819.jpg,Eczema_Severe,Severe,2,Severe,2,0.9793597459793091
+Eczema_Severe_Screenshot 2025-11-16 235022.png,Eczema_Severe,Severe,2,Severe,2,0.9976696372032166
+Eczema_Severe_eczema-nummular-201.jpeg,Eczema_Severe,Severe,2,Moderate,1,0.637495219707489
+Eczema_Severe_eczema-subacute-37.jpeg,Eczema_Severe,Severe,2,Severe,2,0.8095287680625916
+Eczema_Severe_eczema-foot-28.jpg,Eczema_Severe,Severe,2,Severe,2,0.9116065502166748
+Eczema_Severe_eczema-hand-194.jpeg,Eczema_Severe,Severe,2,Severe,2,0.48061901330947876
+Eczema_Severe_eczema-hand-190.jpg,Eczema_Severe,Severe,2,Severe,2,0.9542912840843201
+Eczema_Severe_Screenshot 2025-11-17 011742.png,Eczema_Severe,Severe,2,Severe,2,0.982678234577179
+Eczema_Severe_eczema-trunk-generalized-5.jpg,Eczema_Severe,Severe,2,Moderate,1,0.542478084564209
+Eczema_Severe_eczema-chronic-49.jpeg,Eczema_Severe,Severe,2,Severe,2,0.8806472420692444
+Eczema_Severe_pompholyx-7.jpg,Eczema_Severe,Severe,2,Moderate,1,0.5940141677856445
+Eczema_Severe_eczema-foot-73.jpg,Eczema_Severe,Severe,2,Severe,2,0.8667574524879456
+Eczema_Severe_Screenshot 2025-11-16 223722.png,Eczema_Severe,Severe,2,Severe,2,0.9622482657432556
+Eczema_Severe_eczema-fingertips-28.jpg,Eczema_Severe,Severe,2,Moderate,1,0.6909935474395752
+Eczema_Severe_eczema-fingertips-130.jpeg,Eczema_Severe,Severe,2,Severe,2,0.7380619049072266
+Eczema_Severe_aug_201_Dyshidrosis-51.jpg,Eczema_Severe,Severe,2,Severe,2,0.747049868106842
+Eczema_Severe_Screenshot 2025-11-17 000455.png,Eczema_Severe,Severe,2,Severe,2,0.9937471151351929
+Eczema_Severe_eczema-nummular-197.jpeg,Eczema_Severe,Severe,2,Severe,2,0.9644126892089844
+Eczema_Severe_Screenshot 2025-11-17 001048.png,Eczema_Severe,Severe,2,Severe,2,0.40803563594818115
+Eczema_Severe_eczema-subacute-74.jpg,Eczema_Severe,Severe,2,Severe,2,0.9162154793739319
+Eczema_Severe_eczema-hand-195.jpeg,Eczema_Severe,Severe,2,Mild,0,0.8523388504981995
+Eczema_Severe_eczema-chronic-14.jpg,Eczema_Severe,Severe,2,Moderate,1,0.721896767616272
+Eczema_Severe_Screenshot 2025-11-16 204052.png,Eczema_Severe,Severe,2,Severe,2,0.9969174861907959
+Eczema_Severe_lichen-simplex-chronicus-80.jpg,Eczema_Severe,Severe,2,Mild,0,0.48672059178352356
+Eczema_Severe_Screenshot 2025-11-16 175214.png,Eczema_Severe,Severe,2,Severe,2,0.9979922771453857
+Eczema_Severe_eczema-foot-29.jpeg,Eczema_Severe,Severe,2,Severe,2,0.9509512186050415
+Eczema_Severe_eczema-nummular-93.jpeg,Eczema_Severe,Severe,2,Severe,2,0.968177318572998
+Eczema_Severe_eczema-subacute-102.jpg,Eczema_Severe,Severe,2,Severe,2,0.8800598382949829
+Eczema_Severe_eczema-hand-115.jpg,Eczema_Severe,Severe,2,Moderate,1,0.5439019799232483
+Eczema_Severe_aug_367_lichen-simplex-chronicus-96.jpg,Eczema_Severe,Severe,2,Moderate,1,0.6676447987556458
+Eczema_Severe_eczema-nummular-91.jpg,Eczema_Severe,Severe,2,Severe,2,0.795651376247406
+Eczema_Severe_eczema-subacute-103.jpg,Eczema_Severe,Severe,2,Severe,2,0.9022042155265808
+Eczema_Severe_Screenshot 2025-11-16 235330.png,Eczema_Severe,Severe,2,Moderate,1,0.6117684245109558
+Eczema_Severe_eczema-nummular-115.jpeg,Eczema_Severe,Severe,2,Moderate,1,0.803153395652771
+Eczema_Severe_IMG_5786.jpg,Eczema_Severe,Severe,2,Severe,2,0.9532783031463623
+Eczema_Severe_eczema-foot-35.jpg,Eczema_Severe,Severe,2,Severe,2,0.9165325164794922
+Eczema_Severe_eczema-subacute-98.jpeg,Eczema_Severe,Severe,2,Moderate,1,0.9049892425537109
+Eczema_Severe_eczema-foot-36.jpg,Eczema_Severe,Severe,2,Moderate,1,0.9674404263496399
+Eczema_Severe_Screenshot 2025-11-16 194621.png,Eczema_Severe,Severe,2,Severe,2,0.8807623386383057
+Eczema_Severe_eczema-ears-3.jpg,Eczema_Severe,Severe,2,Moderate,1,0.6747366786003113
+Eczema_Severe_eczema-fingertips-90.jpg,Eczema_Severe,Severe,2,Moderate,1,0.7863282561302185
+Eczema_Severe_eczema-nummular-197.jpg,Eczema_Severe,Severe,2,Severe,2,0.9802623987197876
+Eczema_Severe_eczema-acute-13.jpg,Eczema_Severe,Severe,2,Moderate,1,0.501757025718689
+Eczema_Severe_eczema-fingertips-42.jpeg,Eczema_Severe,Severe,2,Moderate,1,0.7056883573532104
