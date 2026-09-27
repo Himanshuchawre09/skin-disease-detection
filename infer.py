@@ -1,8 +1,4 @@
-"""CLI inference using ordinal severity models selected for accuracy and MAE.
-
-Acne ordinal: 88.53% accuracy, MAE 0.118 versus categorical 82.08%, 0.190.
-Eczema ordinal: 69.69% accuracy, MAE 0.314 versus categorical 64.46%, 0.387.
-"""
+"""CLI inference for seven disease classes and categorical Acne/Eczema severity."""
 
 import argparse
 import json
@@ -15,7 +11,7 @@ from PIL import Image
 from torchvision import transforms, models
 
 # Global configuration matching training
-STAGE1_CLASSES = ["Acne", "Eczema", "Normal", "Other"]
+STAGE1_CLASSES = ["Acne", "Eczema", "Normal", "Other", "NV", "MEL", "BKL"]
 SEVERITY_CLASSES = ["Mild", "Moderate", "Severe"]
 IMAGE_SIZE = 224
 
@@ -31,21 +27,39 @@ def get_eval_transforms():
     ])
 
 
-def load_model(ckpt_path: Path, num_classes: int, device: torch.device, ordinal: bool = False):
+def load_model(
+    ckpt_path: Path,
+    num_classes: int,
+    device: torch.device,
+    expected_classes: list[str] | None = None,
+):
     if not ckpt_path.exists():
         raise FileNotFoundError(f"Model checkpoint not found: {ckpt_path}")
 
     checkpoint = torch.load(ckpt_path, map_location=device)
     model_name = checkpoint.get("model_name", checkpoint.get("arch", "resnet50")).lower()
+    if expected_classes is not None:
+        checkpoint_classes = checkpoint.get("class_names", checkpoint.get("severity_classes"))
+        if checkpoint_classes != expected_classes:
+            raise ValueError(
+                f"Unexpected class order in {ckpt_path}: {checkpoint_classes}; "
+                f"expected {expected_classes}"
+            )
+    checkpoint_image_size = checkpoint.get("image_size", IMAGE_SIZE)
+    if checkpoint_image_size != IMAGE_SIZE:
+        raise ValueError(
+            f"Unexpected image size in {ckpt_path}: {checkpoint_image_size}; "
+            f"expected {IMAGE_SIZE}"
+        )
 
     if "resnet" in model_name:
         model = models.resnet50(weights=None)
         in_features = model.fc.in_features
-        model.fc = nn.Linear(in_features, 1 if ordinal else num_classes)
+        model.fc = nn.Linear(in_features, num_classes)
     elif "efficientnet" in model_name:
         model = models.efficientnet_b0(weights=None)
         in_features = model.classifier[1].in_features
-        model.classifier[1] = nn.Linear(in_features, 1 if ordinal else num_classes)
+        model.classifier[1] = nn.Linear(in_features, num_classes)
     else:
         raise ValueError(f"Unsupported architecture: {model_name}")
 
@@ -59,9 +73,9 @@ def load_model(ckpt_path: Path, num_classes: int, device: torch.device, ordinal:
 class SkinDiagnosticPipeline:
     def __init__(
         self,
-        stage1_path: str = r"runs\resnet50_v2\best_model.pt",
-        acne_severity_path: str = r"runs\severity_acne_ordinal\best_model.pt",
-        eczema_severity_path: str = r"runs\severity_eczema_ordinal\best_model.pt",
+        stage1_path: str = r"runs\resnet50_v3\best_model.pt",
+        acne_severity_path: str = r"runs\severity_acne\best_model.pt",
+        eczema_severity_path: str = r"runs\severity_eczema\best_model.pt",
         device: str = "auto",
     ):
         base_dir = Path(__file__).resolve().parent
@@ -76,19 +90,30 @@ class SkinDiagnosticPipeline:
 
         self.transforms = get_eval_transforms()
 
-        # Stage 1 now uses the four-class model with Other for non-skin rejection: the prior
-        # three-class model called a text-table screenshot Eczema (94.41%); v2 calls it Other
-        # (99.915%) and calls a cardboard box Other (99.996%).
-        # Ordinal models won for both diseases: Acne 88.53% / MAE 0.118 vs 82.08% / 0.190,
-        # and Eczema 69.69% / 0.314 vs 64.46% / 0.387 for categorical models.
+        # Stage 1 uses the merged seven-class model. Only Acne and Eczema have severity heads.
         print(f"Loading Stage 1 Disease Classifier from: {self.stage1_path.name}")
-        self.stage1_model = load_model(self.stage1_path, len(STAGE1_CLASSES), self.device)
+        self.stage1_model = load_model(
+            self.stage1_path,
+            len(STAGE1_CLASSES),
+            self.device,
+            expected_classes=STAGE1_CLASSES,
+        )
 
         print(f"Loading Stage 2 Acne Severity Assessor from: {self.acne_path.name}")
-        self.acne_model = load_model(self.acne_path, len(SEVERITY_CLASSES), self.device, ordinal=True)
+        self.acne_model = load_model(
+            self.acne_path,
+            len(SEVERITY_CLASSES),
+            self.device,
+            expected_classes=SEVERITY_CLASSES,
+        )
 
         print(f"Loading Stage 2 Eczema Severity Assessor from: {self.eczema_path.name}")
-        self.eczema_model = load_model(self.eczema_path, len(SEVERITY_CLASSES), self.device, ordinal=True)
+        self.eczema_model = load_model(
+            self.eczema_path,
+            len(SEVERITY_CLASSES),
+            self.device,
+            expected_classes=SEVERITY_CLASSES,
+        )
         print("All models successfully loaded onto device:", self.device)
 
     def predict(self, image_path: str) -> dict:
@@ -96,50 +121,64 @@ class SkinDiagnosticPipeline:
         if not img_p.exists():
             raise FileNotFoundError(f"Image does not exist: {img_p}")
 
-        raw_image = Image.open(img_p).convert("RGB")
+        with Image.open(img_p) as image:
+            raw_image = image.convert("RGB")
+        return self.predict_image(raw_image, str(img_p.resolve()))
+
+    def predict_image(self, raw_image: Image.Image, image_path: str = "uploaded image") -> dict:
+        raw_image = raw_image.convert("RGB")
         tensor = self.transforms(raw_image).unsqueeze(0).to(self.device)
 
-        # STAGE 1: Disease Classification
-        with torch.no_grad():
+        with torch.inference_mode():
             stage1_logits = self.stage1_model(tensor)
-            stage1_probs = torch.softmax(stage1_logits, dim=1)[0].cpu().numpy()
+            stage1_probs = torch.softmax(stage1_logits, dim=1)[0].cpu()
 
         disease_idx = int(stage1_probs.argmax())
         predicted_disease = STAGE1_CLASSES[disease_idx]
         disease_confidence = float(stage1_probs[disease_idx])
-
         disease_breakdown = {
-            STAGE1_CLASSES[i]: float(stage1_probs[i]) for i in range(len(STAGE1_CLASSES))
+            name: float(stage1_probs[index])
+            for index, name in enumerate(STAGE1_CLASSES)
         }
 
-        # STAGE 2: Severity Assessment
-        if predicted_disease in {"Normal", "Other"}:
+        if predicted_disease in {"Acne", "Eczema"}:
+            severity_model = self.acne_model if predicted_disease == "Acne" else self.eczema_model
+            with torch.inference_mode():
+                severity_probs = torch.softmax(severity_model(tensor), dim=1)[0].cpu()
+
+            severity_idx = int(severity_probs.argmax())
+            predicted_severity = SEVERITY_CLASSES[severity_idx]
+            severity_confidence = float(severity_probs[severity_idx])
+            severity_details = {
+                "probabilities": {
+                    name: float(severity_probs[index])
+                    for index, name in enumerate(SEVERITY_CLASSES)
+                }
+            }
+            clinical_status = f"{predicted_disease} detected at {predicted_severity.upper()} severity"
+        elif predicted_disease == "Normal":
             predicted_severity = "N/A"
             severity_confidence = 1.0
             severity_details = {"N/A": 1.0}
-            if predicted_disease == "Normal":
-                clinical_status = "Healthy skin - No lesion requiring severity staging"
-            else:
-                clinical_status = "Other or non-skin input - severity assessment not applicable"
-        elif predicted_disease in {"Acne", "Eczema"}:
-            severity_model = self.acne_model if predicted_disease == "Acne" else self.eczema_model
-            with torch.no_grad():
-                raw_severity = float(severity_model(tensor).squeeze().cpu().item())
-
-            rounded_severity = round(raw_severity)
-            sev_idx = int(max(0, min(2, rounded_severity)))
-            predicted_severity = SEVERITY_CLASSES[sev_idx]
-            severity_confidence = float(max(0.0, min(1.0, 1.0 - abs(raw_severity - rounded_severity))))
-            severity_details = {
-                "raw_value": raw_severity,
-                "approximate_certainty": severity_confidence,
-            }
-            clinical_status = f"{predicted_disease} detected at {predicted_severity.upper()} severity"
+            clinical_status = "Healthy skin - No lesion requiring severity staging"
+        elif predicted_disease == "Other":
+            predicted_severity = "N/A"
+            severity_confidence = 1.0
+            severity_details = {"N/A": 1.0}
+            clinical_status = "Other or non-skin input - severity assessment not applicable"
+        elif predicted_disease in {"NV", "MEL", "BKL"}:
+            predicted_severity = "N/A"
+            severity_confidence = 1.0
+            severity_details = {"N/A": 1.0}
+            clinical_status = (
+                f"{predicted_disease} lesion class - "
+                "severity assessment not applicable"
+            )
         else:
             raise ValueError(f"Unknown disease: {predicted_disease}")
 
         return {
-            "image_path": str(img_p.resolve()),
+            "image_path": image_path,
             "disease": predicted_disease,
             "disease_confidence": disease_confidence,
             "disease_probabilities": disease_breakdown,
@@ -169,11 +208,10 @@ def format_cli_output(result: dict):
     print("STAGE 2: SEVERITY ASSESSMENT")
     print(f"  Severity Level    : {result['severity'].upper()}")
     if result["severity"] != "N/A":
-        print(f"  Approx. certainty : {result['severity_confidence']*100:.2f}%")
+        print(f"  Confidence        : {result['severity_confidence']*100:.2f}%")
         print("  Note              : Not a calibrated probability")
-        print(f"  Raw ordinal value : {result['severity_details']['raw_value']:.4f}")
     else:
-        print("  Confidence        : 100.00% (Not applicable for healthy skin)")
+        print("  Confidence        : N/A (severity assessment not applicable)")
 
     print("-" * 65)
     print(f"CLINICAL SUMMARY    : {result['clinical_summary']}")
@@ -183,7 +221,7 @@ def format_cli_output(result: dict):
 def run_demo():
     print("\nRunning Automated Demo across Unseen Test Images...")
     base_dir = Path(__file__).resolve().parent
-    test_manifest = base_dir / "data" / "dataset_manifest.csv"
+    test_manifest = base_dir / "data" / "dataset_manifest_v3.csv"
 
     pipeline = SkinDiagnosticPipeline()
 
@@ -192,14 +230,14 @@ def run_demo():
         df = pd.read_csv(test_manifest)
         test_df = df[df["split"] == "test"]
 
-        # Pick 1 sample for each major category from the held-out test split
+        # Pick one sample per Stage 1 class from the held-out test split.
         demo_samples = []
-        for cat in ["Acne_Mild", "Acne_Moderate", "Acne_Severe", "Eczema_Mild", "Eczema_Moderate", "Eczema_Severe", "Normal"]:
-            cat_rows = test_df[test_df["category"] == cat]
-            if len(cat_rows) > 0:
-                rel_path = cat_rows.iloc[0]["path"]
+        for class_name in STAGE1_CLASSES:
+            class_rows = test_df[test_df["disease"] == class_name]
+            if not class_rows.empty:
+                rel_path = str(class_rows.iloc[0]["path"]).replace("\\", "/")
                 full_p = base_dir / "data" / rel_path
-                demo_samples.append((cat, full_p))
+                demo_samples.append((class_name, full_p))
 
         for ground_truth, p in demo_samples:
             print(f">>> Testing Image [Ground Truth: {ground_truth}]:")
@@ -214,9 +252,9 @@ def main():
     parser.add_argument("image_path", nargs="?", default=None, help="Path to input skin image")
     parser.add_argument("--demo", action="store_true", help="Run automated demo on test images")
     parser.add_argument("--json", action="store_true", help="Output results in JSON format")
-    parser.add_argument("--stage1-ckpt", default=r"runs\resnet50_v2\best_model.pt", help="Stage 1 four-class checkpoint")
-    parser.add_argument("--acne-ckpt", default=r"runs\severity_acne_ordinal\best_model.pt", help="Stage 2 Acne ordinal checkpoint")
-    parser.add_argument("--eczema-ckpt", default=r"runs\severity_eczema_ordinal\best_model.pt", help="Stage 2 Eczema ordinal checkpoint")
+    parser.add_argument("--stage1-ckpt", default=r"runs\resnet50_v3\best_model.pt", help="Stage 1 seven-class checkpoint")
+    parser.add_argument("--acne-ckpt", default=r"runs\severity_acne\best_model.pt", help="Categorical Acne severity checkpoint")
+    parser.add_argument("--eczema-ckpt", default=r"runs\severity_eczema\best_model.pt", help="Categorical Eczema severity checkpoint")
     parser.add_argument("--device", default="auto", choices=["auto", "cuda", "cpu"], help="Inference device")
     args = parser.parse_args()
 

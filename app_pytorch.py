@@ -1,8 +1,4 @@
-"""Gradio demo using the selected ordinal severity checkpoints.
-
-Acne ordinal: 88.53% accuracy, MAE 0.118 versus categorical 82.08%, 0.190.
-Eczema ordinal: 69.69% accuracy, MAE 0.314 versus categorical 64.46%, 0.387.
-"""
+"""Gradio demo for seven-class disease and categorical Acne/Eczema severity."""
 
 from pathlib import Path
 import os
@@ -15,7 +11,6 @@ from PIL import Image
 
 from infer import (
     IMAGE_SIZE,
-    SEVERITY_CLASSES,
     STAGE1_CLASSES,
     SkinDiagnosticPipeline,
 )
@@ -64,7 +59,9 @@ def overlay_cam(image, cam, alpha=0.45):
 BASE_DIR = Path(__file__).resolve().parent
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 PIPELINE = SkinDiagnosticPipeline(
-    stage1_path=str(BASE_DIR / "runs" / "resnet50_v2" / "best_model.pt"),
+    stage1_path=str(BASE_DIR / "runs" / "resnet50_v3" / "best_model.pt"),
+    acne_severity_path=str(BASE_DIR / "runs" / "severity_acne" / "best_model.pt"),
+    eczema_severity_path=str(BASE_DIR / "runs" / "severity_eczema" / "best_model.pt"),
     device=str(DEVICE),
 )
 GRAD_CAM = GradCAM(PIPELINE.stage1_model, PIPELINE.stage1_model.layer4[-1].conv3)
@@ -99,40 +96,7 @@ def predict_image(image):
 
 
 def predict_image_fallback(image):
-    tensor = PIPELINE.transforms(image).unsqueeze(0).to(PIPELINE.device)
-    with torch.no_grad():
-        logits = PIPELINE.stage1_model(tensor)
-        probabilities = torch.softmax(logits, dim=1)[0].cpu().numpy()
-    disease_index = int(probabilities.argmax())
-    disease = STAGE1_CLASSES[disease_index]
-    result = {
-        "image_path": "uploaded image",
-        "disease": disease,
-        "disease_confidence": float(probabilities[disease_index]),
-        "disease_probabilities": {
-            STAGE1_CLASSES[i]: float(probabilities[i]) for i in range(len(STAGE1_CLASSES))
-        },
-    }
-    if disease in {"Normal", "Other"}:
-        result.update({"severity": "N/A", "severity_confidence": 1.0, "severity_details": {"N/A": 1.0}})
-        if disease == "Normal":
-            result["clinical_summary"] = "Healthy skin - No lesion requiring severity staging"
-        else:
-            result["clinical_summary"] = "Other or non-skin input - severity assessment not applicable"
-    else:
-        model = PIPELINE.acne_model if disease == "Acne" else PIPELINE.eczema_model
-        with torch.no_grad():
-            raw_value = float(model(tensor).squeeze().cpu().item())
-        rounded_value = round(raw_value)
-        severity_index = int(np.clip(rounded_value, 0, 2))
-        certainty = float(np.clip(1.0 - abs(raw_value - rounded_value), 0.0, 1.0))
-        result.update({
-            "severity": SEVERITY_CLASSES[severity_index],
-            "severity_confidence": certainty,
-            "severity_details": {"raw_value": raw_value, "approximate_certainty": certainty},
-        })
-        result["clinical_summary"] = f"{disease} detected at {result['severity']} severity"
-    return result
+    return PIPELINE.predict_image(image)
 
 
 with gr.Blocks(title="Skin Disease Assessment") as demo:
