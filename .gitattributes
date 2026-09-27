@@ -1,0 +1,3 @@
+runs/resnet50/best_model.pt filter=lfs diff=lfs merge=lfs -text
+runs/severity_acne/best_model.pt filter=lfs diff=lfs merge=lfs -text
+runs/severity_eczema/best_model.pt filter=lfs diff=lfs merge=lfs -text
