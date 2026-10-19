@@ -1,0 +1,9 @@
+metric,value,source
+model,resnet50,runs/resnet50_v3/metrics.json
+test_accuracy,0.8869936034115139,runs/resnet50_v3/metrics.json
+test_macro_precision,0.8815755048686326,runs/resnet50_v3/metrics.json
+test_macro_recall,0.879123575190672,runs/resnet50_v3/metrics.json
+test_macro_f1,0.8769793701412097,runs/resnet50_v3/metrics.json
+best_epoch,5,runs/resnet50_v3/metrics.json
+best_val_loss,0.3265309482886778,runs/resnet50_v3/metrics.json
+manifest_rows,13939,data/dataset_manifest_v3.csv

@@ -1,0 +1,62 @@
+{
+  "model": "efficientnet_b0",
+  "classes": [
+    "nv",
+    "mel",
+    "bkl"
+  ],
+  "test_images": 1334,
+  "best_epoch": 3,
+  "best_val_loss": 0.49875286848151257,
+  "test_accuracy": 0.835832083958021,
+  "test_macro_precision": 0.7204428267170696,
+  "test_macro_recall": 0.7496828203324525,
+  "test_macro_f1": 0.7312511803954745,
+  "per_class": {
+    "nv": {
+      "display_name": "Melanocytic nevus",
+      "precision": 0.9360341151385928,
+      "recall": 0.8913705583756345,
+      "f1": 0.9131565262610505,
+      "support": 985
+    },
+    "mel": {
+      "display_name": "Melanoma",
+      "precision": 0.5301724137931034,
+      "recall": 0.6910112359550562,
+      "f1": 0.6,
+      "support": 178
+    },
+    "bkl": {
+      "display_name": "Benign keratosis-like lesions",
+      "precision": 0.6951219512195121,
+      "recall": 0.6666666666666666,
+      "f1": 0.6805970149253732,
+      "support": 171
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "nv",
+      "mel",
+      "bkl"
+    ],
+    "rows_true_columns_predicted": [
+      [
+        878,
+        72,
+        35
+      ],
+      [
+        40,
+        123,
+        15
+      ],
+      [
+        20,
+        37,
+        114
+      ]
+    ]
+  }
+}

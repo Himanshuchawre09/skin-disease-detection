@@ -1,0 +1,245 @@
+{
+  "test_dataset": {
+    "total_images": 1334,
+    "total_lesions": 1011,
+    "support": {
+      "nv": 985,
+      "mel": 178,
+      "bkl": 171
+    }
+  },
+  "overall_comparison": {
+    "resnet50": {
+      "test_accuracy": 0.8500749625187406,
+      "test_macro_precision": 0.7464074175961449,
+      "test_macro_recall": 0.773984829943068,
+      "test_macro_f1": 0.7522290727657085,
+      "melanoma_false_negatives": 78,
+      "melanoma_false_positives": 47,
+      "per_class": {
+        "nv": {
+          "precision": 0.9307450157397692,
+          "recall": 0.9005076142131979,
+          "f1": 0.9153766769865841,
+          "support": 985
+        },
+        "mel": {
+          "precision": 0.6802721088435374,
+          "recall": 0.5617977528089888,
+          "f1": 0.6153846153846154,
+          "support": 178
+        },
+        "bkl": {
+          "precision": 0.6282051282051282,
+          "recall": 0.8596491228070176,
+          "f1": 0.725925925925926,
+          "support": 171
+        }
+      }
+    },
+    "efficientnet_b0": {
+      "test_accuracy": 0.835832083958021,
+      "test_macro_precision": 0.7204428267170696,
+      "test_macro_recall": 0.7496828203324525,
+      "test_macro_f1": 0.7312511803954745,
+      "melanoma_false_negatives": 55,
+      "melanoma_false_positives": 109,
+      "per_class": {
+        "nv": {
+          "precision": 0.9360341151385928,
+          "recall": 0.8913705583756345,
+          "f1": 0.9131565262610505,
+          "support": 985
+        },
+        "mel": {
+          "precision": 0.5301724137931034,
+          "recall": 0.6910112359550562,
+          "f1": 0.6,
+          "support": 178
+        },
+        "bkl": {
+          "precision": 0.6951219512195121,
+          "recall": 0.6666666666666666,
+          "f1": 0.6805970149253732,
+          "support": 171
+        }
+      }
+    },
+    "delta_effnet_minus_resnet": {
+      "accuracy": -0.014242878560719596,
+      "macro_precision": -0.025964590879075322,
+      "macro_recall": -0.02430200961061557,
+      "macro_f1": -0.020977892370233953,
+      "melanoma_recall": 0.1292134831460674,
+      "melanoma_precision": -0.15009969505043397,
+      "melanoma_f1": -0.015384615384615441,
+      "melanoma_false_negatives": -23,
+      "melanoma_false_positives": 62
+    }
+  },
+  "melanoma_false_negatives_breakdown": {
+    "support_melanoma": 178,
+    "resnet50_false_negatives": {
+      "count": 78,
+      "rate": 0.43820224719101125,
+      "routes": {
+        "nv": 48,
+        "bkl": 30
+      },
+      "high_confidence_misses": {
+        "ge_80": 28,
+        "ge_90": 13,
+        "ge_95": 7
+      }
+    },
+    "efficientnet_b0_false_negatives": {
+      "count": 55,
+      "rate": 0.3089887640449438,
+      "routes": {
+        "nv": 40,
+        "bkl": 15
+      },
+      "high_confidence_misses": {
+        "ge_80": 21,
+        "ge_90": 16,
+        "ge_95": 9
+      }
+    },
+    "overlap_melanoma_cases": {
+      "missed_by_both": 40,
+      "missed_by_resnet_only_effnet_correct": 38,
+      "missed_by_effnet_only_resnet_correct": 15,
+      "correct_by_both": 85
+    }
+  },
+  "melanoma_false_positives_breakdown": {
+    "support_non_melanoma": 1156,
+    "resnet50_false_positives": {
+      "count": 47,
+      "rate": 0.04065743944636678,
+      "sources": {
+        "from_nv": 41,
+        "from_bkl": 6
+      },
+      "high_confidence_fp": {
+        "ge_80": 6,
+        "ge_90": 0,
+        "ge_95": 0
+      }
+    },
+    "efficientnet_b0_false_positives": {
+      "count": 109,
+      "rate": 0.09429065743944637,
+      "sources": {
+        "from_nv": 72,
+        "from_bkl": 37
+      },
+      "high_confidence_fp": {
+        "ge_80": 37,
+        "ge_90": 20,
+        "ge_95": 6
+      }
+    },
+    "overlap_false_positives": {
+      "flagged_mel_by_both": 23,
+      "flagged_mel_by_resnet_only": 24,
+      "flagged_mel_by_effnet_only": 86
+    }
+  },
+  "nv_bkl_confusions": {
+    "nv_to_bkl": {
+      "resnet50": 57,
+      "efficientnet_b0": 35
+    },
+    "bkl_to_nv": {
+      "resnet50": 18,
+      "efficientnet_b0": 20
+    }
+  },
+  "confidence_distributions": {
+    "resnet50": {
+      "correct_predictions": {
+        "mean": 0.8800349969817638,
+        "std": 0.16383607897275082,
+        "median": 0.9795905351638794,
+        "p25": 0.7824629843235016,
+        "p75": 0.9999523162841797,
+        "ge_80": 838,
+        "ge_90": 720,
+        "ge_95": 637
+      },
+      "error_predictions": {
+        "mean": 0.6645956635475159,
+        "std": 0.16436405192605075,
+        "median": 0.6395598649978638,
+        "p25": 0.5295183211565018,
+        "p75": 0.8023722320795059,
+        "ge_80": 51,
+        "ge_90": 24,
+        "ge_95": 11
+      },
+      "melanoma_prob_on_true_mel": {
+        "mean": 0.48927532310867056,
+        "std": 0.2970481508189561,
+        "median": 0.4995192289352417,
+        "p25": 0.23179984837770462,
+        "p75": 0.7339601367712021,
+        "ge_80": 35,
+        "ge_90": 16,
+        "ge_95": 12
+      },
+      "melanoma_prob_on_non_mel": {
+        "mean": 0.08754875135405112,
+        "std": 0.1467378239447429,
+        "median": 0.007932256907224655,
+        "p25": 5.904394356548437e-06,
+        "p75": 0.1270509548485279,
+        "ge_80": 6,
+        "ge_90": 0,
+        "ge_95": 0
+      }
+    },
+    "efficientnet_b0": {
+      "correct_predictions": {
+        "mean": 0.9171482378591871,
+        "std": 0.13465431462918612,
+        "median": 0.9876699447631836,
+        "p25": 0.8969264030456543,
+        "p75": 0.9991486072540283,
+        "ge_80": 934,
+        "ge_90": 831,
+        "ge_95": 729
+      },
+      "error_predictions": {
+        "mean": 0.7245202528559453,
+        "std": 0.17268111599993194,
+        "median": 0.7274132966995239,
+        "p25": 0.5742659568786621,
+        "p75": 0.8852086961269379,
+        "ge_80": 81,
+        "ge_90": 51,
+        "ge_95": 25
+      },
+      "melanoma_prob_on_true_mel": {
+        "mean": 0.6407972148611744,
+        "std": 0.33852790982659126,
+        "median": 0.7607364058494568,
+        "p25": 0.3520592898130417,
+        "p75": 0.9476713389158249,
+        "ge_80": 80,
+        "ge_90": 64,
+        "ge_95": 43
+      },
+      "melanoma_prob_on_non_mel": {
+        "mean": 0.11296646345712427,
+        "std": 0.21816803946299246,
+        "median": 0.007298884680494666,
+        "p25": 0.0004379773818072863,
+        "p75": 0.09615439176559448,
+        "ge_80": 37,
+        "ge_90": 20,
+        "ge_95": 6
+      }
+    }
+  }
+}

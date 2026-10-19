@@ -1,0 +1,23 @@
+network,variant,feature_channels,param_count_total,param_count_trainable,description
+resnet50,baseline,2048,23510081,23510081,baseline body; new 1-output head
+resnet50,remove,1024,8544321,8544321,drop layer4; use layer1-3 output
+resnet50,add,2048,24036545,24036545,add SE block after layer4
+densenet121,baseline,1024,6954881,6954881,baseline body; new 1-output head
+densenet121,remove,512,4794241,4794241,drop denseblock4 and final norm5
+densenet121,add,1024,16394113,16394113,add Conv-BN-ReLU after final feature map
+efficientnet_b0,baseline,1280,4008829,4008829,baseline body; new 1-output head
+efficientnet_b0,remove,320,3595709,3595709,drop the last 1x1 conv in features
+efficientnet_b0,add,1280,5649789,5649789,add Conv-BN-ReLU to final features
+mobilenet_v2,baseline,1280,2225153,2225153,baseline body; new 1-output head
+mobilenet_v2,remove,320,1812033,1812033,drop the last 1x1 conv in features
+mobilenet_v2,add,1280,3866113,3866113,add Conv-BN-ReLU to final features
+squeezenet1_1,baseline,512,723009,723009,baseline body; new 1-output head
+squeezenet1_1,remove,512,525825,525825,drop the last Fire module
+squeezenet1_1,add,512,986177,986177,add Conv-BN-ReLU before pooling
+shufflenet_v2_x1_0,baseline,1024,1254629,1254629,baseline body; new 1-output head
+shufflenet_v2_x1_0,remove,232,275301,275301,drop the final stage (stage4) and the final projection
+shufflenet_v2_x1_0,add,1024,1470853,1470853,add Conv-BN-ReLU after final stage while preserving stage4 depth
+googlenet,baseline,1024,5600929,5600929,baseline body; new 1-output head
+googlenet,remove,832,4253697,4253697,drop inception5b
+googlenet,add,1024,6651553,6651553,add Conv-BN-ReLU after inception5b
+ownnet,final,256,8250233,8250233,DenseNet121 features + Conv-BN-ReLU(1024->256) + SE(reduction=16) + dropout(0.3)

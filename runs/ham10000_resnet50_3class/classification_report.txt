@@ -1,0 +1,9 @@
+                               precision    recall  f1-score   support
+
+            Melanocytic nevus     0.9307    0.9005    0.9154       985
+                     Melanoma     0.6803    0.5618    0.6154       178
+Benign keratosis-like lesions     0.6282    0.8596    0.7259       171
+
+                     accuracy                         0.8501      1334
+                    macro avg     0.7464    0.7740    0.7522      1334
+                 weighted avg     0.8585    0.8501    0.8511      1334

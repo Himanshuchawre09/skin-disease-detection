@@ -1,0 +1,17 @@
+label,number_in_report,source_file,value_in_source,match
+Manifest record count,"13,939",data/dataset_manifest_v3.csv,13939,yes
+Train split total,"10,207",data/dataset_manifest_v3.csv,10207,yes
+Val split total,"1,856",data/dataset_manifest_v3.csv,1856,yes
+Test split total,"1,876",data/dataset_manifest_v3.csv,1876,yes
+Stage 1 test_accuracy,0.886994,runs/resnet50_v3/metrics.json,0.8869936034115139,yes
+Stage 1 test_macro_precision,0.881576,runs/resnet50_v3/metrics.json,0.8815755048686326,yes
+Stage 1 test_macro_recall,0.879124,runs/resnet50_v3/metrics.json,0.879123575190672,yes
+Stage 1 test_macro_f1,0.876979,runs/resnet50_v3/metrics.json,0.8769793701412097,yes
+Acne ownnet seed-42 test_accuracy,0.6461538461538462,runs\arch_comparison\Acne\ownnet_final\metrics.json,0.6461538461538462,yes
+Acne ownnet seed-42 test_mae,0.3769230769230769,runs\arch_comparison\Acne\ownnet_final\metrics.json,0.3769230769230769,yes
+Acne densenet121 seed-42 test_accuracy,0.7076923076923077,runs\arch_comparison\Acne\densenet121_baseline\metrics.json,0.7076923076923077,yes
+Acne densenet121 seed-42 test_mae,0.3153846153846154,runs\arch_comparison\Acne\densenet121_baseline\metrics.json,0.3153846153846154,yes
+Eczema ownnet seed-42 test_accuracy,0.6126126126126126,runs\arch_comparison\Eczema\ownnet_final\metrics.json,0.6126126126126126,yes
+Eczema ownnet seed-42 test_mae,0.4099099099099099,runs\arch_comparison\Eczema\ownnet_final\metrics.json,0.4099099099099099,yes
+Eczema densenet121 seed-42 test_accuracy,0.6531531531531531,runs\arch_comparison\Eczema\densenet121_baseline\metrics.json,0.6531531531531531,yes
+Eczema densenet121 seed-42 test_mae,0.3783783783783784,runs\arch_comparison\Eczema\densenet121_baseline\metrics.json,0.3783783783783784,yes

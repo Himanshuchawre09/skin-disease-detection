@@ -1,0 +1,53 @@
+{
+  "disease": "Eczema",
+  "network": "resnet50",
+  "variant": "remove",
+  "best_epoch": 16,
+  "best_val_mae": 0.37726571322617375,
+  "test_accuracy": 0.6441441441441441,
+  "test_mae": 0.36936936936936937,
+  "macro_precision": 0.6630995050349889,
+  "macro_recall": 0.642802826981571,
+  "macro_f1": 0.6487879731620919,
+  "per_class": {
+    "Mild": {
+      "precision": 0.7857142857142857,
+      "recall": 0.6790123456790124,
+      "f1": 0.7284768211920529,
+      "support": 81
+    },
+    "Moderate": {
+      "precision": 0.4777777777777778,
+      "recall": 0.5972222222222222,
+      "f1": 0.5308641975308642,
+      "support": 72
+    },
+    "Severe": {
+      "precision": 0.7258064516129032,
+      "recall": 0.6521739130434783,
+      "f1": 0.6870229007633588,
+      "support": 69
+    }
+  },
+  "confusion_matrix": [
+    [
+      55,
+      23,
+      3
+    ],
+    [
+      15,
+      43,
+      14
+    ],
+    [
+      0,
+      24,
+      45
+    ]
+  ],
+  "param_count_total": 8544321,
+  "param_count_trainable": 8544321,
+  "average_training_seconds_per_epoch": 23.196527970000034,
+  "inference_ms_per_image": 2.162426147957232
+}

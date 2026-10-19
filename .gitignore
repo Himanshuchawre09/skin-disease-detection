@@ -1,11 +1,30 @@
 .venv/
 __pycache__/
 *.pt
+*.pth
+*.py[cod]
+*.log
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+dist-ssr/
+build/
+.idea/
+.vscode/
+*.local
 data/splits/
 data/clean_raw/
 data/HAM10000_images_part_1/
 data/HAM10000_images_part_2/
 data/adversarial_test/
+data/dataset_manifest_v2_fixed.csv
+data/dataset_manifest_v3.csv
+data/HAM10000_metadata.csv
+data/ham10000_3class/split_manifest.csv
+data/ham10000_3class/split_summary.json
+dataset_manifest_v3.csv
 hmnist_28_28_L.csv
 hmnist_28_28_RGB.csv
 hmnist_8_8_L.csv
@@ -17,3 +36,19 @@ hmnist_8_8_RGB.csv
 *.jpeg
 runs/*/best_model.pt
 __pycache__/
+**/predictions.csv
+**/error.txt
+
+# Keep aggregate architecture-comparison plots, not per-example image outputs.
+!runs/arch_comparison/**/comparison/*.png
+!data/eda_distributions.png
+
+# Aggregate report figures are safe to share; exclude Grad-CAM examples.
+!report/figures/class_distribution.png
+!report/figures/ownnet_architecture.png
+!report/figures/stage1_confusion_matrix.png
+!report/figures/system_pipeline.png
+!report/figures/three_seed_comparison.png
+
+# This local placeholder is empty; use the ResNet50 HAM10000 runner instead.
+train_ham10000_efficientnetb0.py

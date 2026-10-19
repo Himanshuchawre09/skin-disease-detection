@@ -1,0 +1,53 @@
+{
+  "disease": "Acne",
+  "network": "resnet50",
+  "variant": "add",
+  "best_epoch": 11,
+  "best_val_mae": 0.3580495942898882,
+  "test_accuracy": 0.6615384615384615,
+  "test_mae": 0.36153846153846153,
+  "macro_precision": 0.6649140211640212,
+  "macro_recall": 0.6500935578722267,
+  "macro_f1": 0.6540412725211533,
+  "per_class": {
+    "Mild": {
+      "precision": 0.53125,
+      "recall": 0.5862068965517241,
+      "f1": 0.5573770491803278,
+      "support": 29
+    },
+    "Moderate": {
+      "precision": 0.6349206349206349,
+      "recall": 0.6896551724137931,
+      "f1": 0.6611570247933884,
+      "support": 58
+    },
+    "Severe": {
+      "precision": 0.8285714285714286,
+      "recall": 0.6744186046511628,
+      "f1": 0.7435897435897436,
+      "support": 43
+    }
+  },
+  "confusion_matrix": [
+    [
+      17,
+      12,
+      0
+    ],
+    [
+      12,
+      40,
+      6
+    ],
+    [
+      3,
+      11,
+      29
+    ]
+  ],
+  "param_count_total": 24036545,
+  "param_count_trainable": 24036545,
+  "average_training_seconds_per_epoch": 26.333258531250294,
+  "inference_ms_per_image": 5.03625208332576
+}

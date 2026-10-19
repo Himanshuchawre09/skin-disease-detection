@@ -1,0 +1,236 @@
+{
+  "figures": {
+    "acne_confusion_matrix_grid.png": {
+      "width_px": 3600,
+      "height_px": 8400,
+      "dpi": 300
+    },
+    "acne_confusion_matrix_grid_part1.png": {
+      "width_px": 3600,
+      "height_px": 2800,
+      "dpi": 300
+    },
+    "acne_confusion_matrix_grid_part2.png": {
+      "width_px": 3600,
+      "height_px": 2800,
+      "dpi": 300
+    },
+    "acne_confusion_matrix_grid_part3.png": {
+      "width_px": 3600,
+      "height_px": 2800,
+      "dpi": 300
+    },
+    "acne_inference_ms_bar.png": {
+      "width_px": 3200,
+      "height_px": 1600,
+      "dpi": 300
+    },
+    "acne_param_count_bar.png": {
+      "width_px": 3200,
+      "height_px": 1600,
+      "dpi": 300
+    },
+    "acne_test_accuracy_bar.png": {
+      "width_px": 3200,
+      "height_px": 1600,
+      "dpi": 300
+    },
+    "acne_test_mae_bar.png": {
+      "width_px": 3200,
+      "height_px": 1600,
+      "dpi": 300
+    },
+    "acne_train_loss_curves.png": {
+      "width_px": 3200,
+      "height_px": 1800,
+      "dpi": 300
+    },
+    "acne_training_seconds_bar.png": {
+      "width_px": 3200,
+      "height_px": 1600,
+      "dpi": 300
+    },
+    "acne_val_mae_curves.png": {
+      "width_px": 3200,
+      "height_px": 1800,
+      "dpi": 300
+    },
+    "class_distribution.png": {
+      "width_px": 2190,
+      "height_px": 1140,
+      "dpi": 300
+    },
+    "eczema_confusion_matrix_grid.png": {
+      "width_px": 3600,
+      "height_px": 8400,
+      "dpi": 300
+    },
+    "eczema_confusion_matrix_grid_part1.png": {
+      "width_px": 3600,
+      "height_px": 2800,
+      "dpi": 300
+    },
+    "eczema_confusion_matrix_grid_part2.png": {
+      "width_px": 3600,
+      "height_px": 2800,
+      "dpi": 300
+    },
+    "eczema_confusion_matrix_grid_part3.png": {
+      "width_px": 3600,
+      "height_px": 2800,
+      "dpi": 300
+    },
+    "eczema_inference_ms_bar.png": {
+      "width_px": 3200,
+      "height_px": 1600,
+      "dpi": 300
+    },
+    "eczema_param_count_bar.png": {
+      "width_px": 3200,
+      "height_px": 1600,
+      "dpi": 300
+    },
+    "eczema_test_accuracy_bar.png": {
+      "width_px": 3200,
+      "height_px": 1600,
+      "dpi": 300
+    },
+    "eczema_test_mae_bar.png": {
+      "width_px": 3200,
+      "height_px": 1600,
+      "dpi": 300
+    },
+    "eczema_train_loss_curves.png": {
+      "width_px": 3200,
+      "height_px": 1800,
+      "dpi": 300
+    },
+    "eczema_training_seconds_bar.png": {
+      "width_px": 3200,
+      "height_px": 1600,
+      "dpi": 300
+    },
+    "eczema_val_mae_curves.png": {
+      "width_px": 3200,
+      "height_px": 1800,
+      "dpi": 300
+    },
+    "gradcam_correct.png": {
+      "width_px": 2200,
+      "height_px": 9000,
+      "dpi": 300
+    },
+    "gradcam_correct_example.png": {
+      "width_px": 2200,
+      "height_px": 1500,
+      "dpi": 300
+    },
+    "gradcam_misclassified.png": {
+      "width_px": 2200,
+      "height_px": 3840,
+      "dpi": 300
+    },
+    "gradcam_misclassified_example.png": {
+      "width_px": 2200,
+      "height_px": 1280,
+      "dpi": 300
+    },
+    "ownnet_architecture.png": {
+      "width_px": 2205,
+      "height_px": 1005,
+      "dpi": 300
+    },
+    "stage1_confusion_matrix.png": {
+      "width_px": 2000,
+      "height_px": 1500,
+      "dpi": 300
+    },
+    "system_pipeline.png": {
+      "width_px": 2169,
+      "height_px": 705,
+      "dpi": 300
+    },
+    "three_seed_comparison.png": {
+      "width_px": 2190,
+      "height_px": 1500,
+      "dpi": 300
+    }
+  },
+  "stage1_metrics_keys": [
+    "best_epoch",
+    "best_val_loss",
+    "model",
+    "test_accuracy",
+    "test_macro_f1",
+    "test_macro_precision",
+    "test_macro_recall"
+  ],
+  "manifest_records": 13939,
+  "ownnet_dummy_output_shape": [
+    1,
+    1
+  ],
+  "ownnet_forward_shapes": [
+    [
+      "backbone.features",
+      "1 \u00d7 1024 \u00d7 7 \u00d7 7"
+    ],
+    [
+      "1\u00d71 Conv-BN-ReLU + SE",
+      "1 \u00d7 256 \u00d7 7 \u00d7 7"
+    ],
+    [
+      "Global average pool",
+      "1 \u00d7 256 \u00d7 1 \u00d7 1"
+    ],
+    [
+      "Flatten",
+      "1 \u00d7 256"
+    ],
+    [
+      "Dropout",
+      "1 \u00d7 256"
+    ],
+    [
+      "Linear ordinal head",
+      "1 \u00d7 1"
+    ]
+  ],
+  "todo_items": [
+    "[TODO: Academic year]",
+    "[TODO: Add per-class Stage 1 precision, recall, F1, and MEL recall to the source metrics JSON or cite an approved machine-readable source.]",
+    "[TODO: Department]",
+    "[TODO: Guide/teacher name]",
+    "[TODO: Insert institution-approved declaration and certificate; obtain required signatures.]",
+    "[TODO: Institute]",
+    "[TODO: Roll number(s)]",
+    "[TODO: Student name(s)]",
+    "[TODO: Student to write acknowledgement.]",
+    "[TODO: Submission date]",
+    "[TODO: Verify the HSV gate false-rejection count; LIMITATIONS.md reports a 663-image analysis and one genuine image with zero skin pixels, but not 98 rejections.]",
+    "[TODO: Verify the original-manifest test/train overlap percentage in a source record; LIMITATIONS.md does not state 28.5%.]",
+    "[TODO: insert app screenshot]",
+    "[TODO: limitation]",
+    "[TODO: method]",
+    "[TODO: reported result]",
+    "[TODO: student to add full reference and one-sentence finding]",
+    "[TODO: task]"
+  ],
+  "verification": {
+    "body_pages_planned_by_explicit_breaks": 14,
+    "paragraphs": 233,
+    "tables": 13,
+    "inline_images": 27,
+    "figure_and_table_caption_count": 33,
+    "missing_figure_files": [],
+    "null_like_tokens": [],
+    "banned_claims": [],
+    "historical_string_leakage_only": {
+      "99.08": true,
+      "88.53": true,
+      "69.69": true,
+      "0.118": true
+    },
+    "contains_prompt_instructions": false
+  }
+}

@@ -1,0 +1,7 @@
+stage,observed_output_shape
+backbone.features,1 × 1024 × 7 × 7
+1×1 Conv-BN-ReLU + SE,1 × 256 × 7 × 7
+Global average pool,1 × 256 × 1 × 1
+Flatten,1 × 256
+Dropout,1 × 256
+Linear ordinal head,1 × 1

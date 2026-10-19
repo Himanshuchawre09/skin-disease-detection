@@ -97,11 +97,39 @@ skin_disease_project/
 
 ## 4. Required dataset layout
 
+### Obtaining and placing data
+
+Raw image datasets and newly generated manifests are intentionally not stored
+in this repository because the source and redistribution terms could not be
+verified for every input. Obtain each dataset and any permitted metadata from
+its original source under that source's terms; this project does not grant
+redistribution rights. Create or obtain the required local manifests before
+running the affected experiments.
+
+For the clinical severity and disease-classification experiments, provide the
+permitted local copy of `data/dataset_manifest_v3.csv` and place the image files
+at its referenced paths under `data/` (the manifest paths use backslashes).
+Keep the manifest and image directory structure unchanged, or update the local
+manifest paths to match. The training commands use
+`data/dataset_manifest_v3.csv` and `data` as the image root by default. The
+manifest is excluded from this repository until its redistribution terms are
+confirmed.
+
+For the HAM10000 experiments, obtain the HAM10000 images and metadata from the
+original dataset source. Place extracted images in
+`data/HAM10000_images_part_1/` and `data/HAM10000_images_part_2/`, and metadata
+at `data/HAM10000_metadata.csv`. Provide or generate the local
+`data/ham10000_3class/split_manifest.csv`; it refers to those image paths.
+The source images, metadata, and derived manifest remain local and are
+excluded from Git until redistribution terms are confirmed.
+
 The current clinical-image training and inference pipeline relies on the manifest and image structure expected by the training scripts and `infer.py`.
 
 ### Clinical dataset format
 
-The manifest files such as `data/dataset_manifest.csv` and `data/dataset_manifest_v2.csv` contain rows with fields including:
+The required local manifest files such as `data/dataset_manifest.csv`,
+`data/dataset_manifest_v2.csv`, and `data/dataset_manifest_v3.csv` contain rows
+with fields including:
 
 - `md5`
 - `filename`
@@ -144,7 +172,8 @@ The script `train_stage1.py` explicitly supports the `clean_raw/<disease>/<filen
 
 ### HAM10000 manifest layout
 
-The separate HAM10000 pipeline uses `data/ham10000_3class/split_manifest.csv` with required columns:
+The separate HAM10000 pipeline expects the local
+`data/ham10000_3class/split_manifest.csv` with required columns:
 
 ```text
 dx, lesion_id, path, split
